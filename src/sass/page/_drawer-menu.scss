@@ -1,0 +1,60 @@
+@use "global" as *;
+
+.drawer-menu{
+  background-color: $green;
+  height: 100vh;
+  color: $white;
+  display: none;
+  position: relative;
+  z-index: 9999;
+}
+.drawer-menu.is-active{
+  display: block;
+}
+
+.drawer-menu__inner{
+  padding: rem(25) 0 0 rem(15);
+  display: flex;
+}
+
+.drawer-menu__wrapper:first-child{
+  margin-right: rem(7);
+}
+
+.drawer-menu__items{
+  margin-bottom: rem(42);
+}
+
+.drawer-menu__term{
+  display: flex;
+  font-size: rem(16);
+  line-height: 1;
+  font-weight: $bold;
+  font-family: "Noto Sans JP";
+}
+
+.drawer-menu__img{
+  width: rem(18);
+  margin: rem(-1) rem(5) 0 0;
+}
+.drawer-menu__img img{
+  width: 100%;
+}
+
+.drawer-menu__description{
+  font-size: rem(16);
+  line-height: 1;
+  font-family: "Noto Sans JP";
+  margin: rem(26) 0 0 rem(22);
+}
+
+.drawer-menu__description:nth-of-type(1){
+  margin-top: rem(25);
+}
+
+.drawer-menu__link{
+  transition: all 0.3s;
+}
+.drawer-menu__link:hover{
+  opacity: 0.5;
+}

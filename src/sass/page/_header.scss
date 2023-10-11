@@ -1,0 +1,112 @@
+@use "global" as *;
+
+.header{
+  width: 100%;
+  height: rem(80);
+  background-color:rgba($color: $black, $alpha: 0.68) ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  @include mq("md"){
+    height: rem(90);
+  }
+}
+
+.header.is-active{
+  background-color: $green;
+}
+
+.header__inner{
+  padding: rem(21) rem(15);
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include mq("md"){
+    padding: rem(20) rem(40);
+  }
+}
+
+.header__title{
+  height: inherit;
+  width: rem(102);
+  display: flex;
+  align-items: center;
+  @include mq("md"){
+    width: rem(133);
+  }
+}
+
+.header__link--title{
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.header__link--title img{
+  @include mq("md"){
+    margin-top: rem(6);
+}
+}
+
+.header__nav{
+  height: inherit;
+}
+
+.header__lists{
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.header__list{
+  height: inherit;
+  margin-left: rem(40);
+  text-align: center;
+}
+
+.header__link{
+  display: inline-block;
+  height: inherit;
+  color: $white;
+  padding-top: rem(26);
+  position: relative;
+}
+
+.header__link:hover{
+  color: $white;
+}
+
+.header__link::after{
+  content: "";
+  position: absolute;
+  bottom: rem(15);
+  left: 10%;
+  width: 80%;
+  height: rem(2);
+  background-color: $white;
+  transition: all 0.3s;
+  transform: scale(0, 1);
+  transform-origin: center top;
+}
+
+.header__link:hover::after{
+  transform: scale(1, 1);
+}
+
+.header__text{
+  font-size: rem(18);
+  line-height: 1;
+  font-weight: $regular;
+}
+
+.header__text.header__text--sub{
+  line-height: 1;
+  font-size: rem(10);
+  font-weight: $regular;
+  margin-top: rem(4);
+  @include mq("md"){
+    margin-top: rem(8);
+  }
+}

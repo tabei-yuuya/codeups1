@@ -1,0 +1,136 @@
+@use "global" as *;
+
+.contact{
+  margin-top: rem(87);
+  position: relative;
+  @include mq("md"){
+    margin-top: rem(141);
+  }
+}
+
+.contact__img1{
+  width: rem(109);
+  height: rem(50);
+  position: absolute;
+  top: rem(-26);
+  right: rem(15);
+  @include mq("md"){
+    width:rem(301) ;
+    height: rem(138);
+    top: rem(-40);
+    right: rem(50);
+  }
+}
+
+.contact__container{
+  @include mq("md"){
+    display: flex;
+    padding:rem(80) rem(50) ;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.contact__content{
+  width: 100%;
+  text-align: center;
+  @include mq("md"){
+    width: rem(440);
+    margin-right: rem(82);
+  }
+}
+.contact__content:nth-of-type(2){
+  @include mq("md"){
+    border-left: rem(1) solid $green;
+    margin-right: 0;
+    padding-top: rem(19.5);
+  }
+}
+
+.contact__img2{
+  width: rem(295);
+  border-bottom:rem(1) solid $green ;
+  padding-bottom: rem(6);
+  margin: 0 auto rem(15);
+  @include mq("md"){
+    width: rem(440);
+    padding-bottom: rem(7);
+    margin-bottom: rem(24);
+  }
+}
+
+.contact__img2 img{
+  width: rem(174);
+  height: rem(65);
+  margin: 0 auto;
+  @include mq("md"){
+    width: rem(200);
+    height:rem(75) ;
+  }
+}
+
+.contact__box{
+  @include mq("md"){
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.contact__text{
+  font-size: rem(16);
+  line-height: 1.7;
+  font-family: "Noto Sans JP";
+  margin-bottom: rem(16);
+  @include mq("md"){
+    text-align: left;
+  }
+}
+
+.contact__item{
+  width: rem(295);
+  height: rem(160);
+  background-color: $glay;
+  margin: 0 auto;
+  margin-bottom: rem(40);
+  @include mq("md"){
+    width: rem(273);
+    height: rem(148);
+    margin: 0;
+  }
+}
+
+.contact__title{
+  font-size:rem(80);
+  line-height: 1;
+  font-weight: $regular;
+  color: $black;
+  @include mq("md"){
+    margin-top: rem(2);
+    margin-left: rem(34);
+  }
+}
+.contact__title span{
+  color: $green;
+}
+
+.contact__title.contact__title--sub{
+  color: $green;
+  font-size: rem(12);
+  line-height: 1;
+  margin-top: rem(-1);
+  margin-bottom: rem(13);
+}
+.contact__title.contact__title--sub:nth-last-child(2){
+  color: $green;
+  font-size: rem(14);
+  line-height: 1;
+  margin-bottom: rem(40);
+}
+
+.contact__btn{
+  display: flex;
+  justify-content: center;
+  @include mq("md"){
+    margin-left: rem(33);
+  }
+}

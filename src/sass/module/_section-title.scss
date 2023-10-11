@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.section-title{
+  text-align: center;
+}
+
+.section-title__main{
+  font-size: rem(32);
+  color: $black;
+  font-weight: $regular;
+  @include mq("md"){
+    font-size: rem(40);
+  }
+}
+.section-title__main span{
+  color: $green;
+}
+
+.section-title .section-title--blog span{
+  @include mq("md"){
+    color: $white;
+  }
+}
+
+.section-title .section-title--blog{
+  @include mq("md"){
+    color: $white;
+  }
+}
+
+.section-title__sub{
+  font-size: rem(12);
+  color: $green;
+  margin-top: rem(1);
+}

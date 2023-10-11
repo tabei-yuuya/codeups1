@@ -1,0 +1,97 @@
+@use "global" as *;
+
+.voice-cards__items{
+  width: rem(345);
+  box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
+  @include mq("md"){
+    width: 48.5%;
+  }
+}
+.voice-card__item{
+  padding: rem(24) rem(16);
+  @include mq("md"){
+    padding: rem(24);
+  }
+}
+
+.voice-card__header{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.voice-card__img{
+  width: rem(151);
+  height:rem(117) ;
+  margin-left: rem(15);
+  @include mq("md"){
+    height:rem(140) ;
+    width: rem(180);
+  }
+}
+
+
+.voice-card__body{
+  width: rem(149);
+  margin-top: rem(-6);
+  @include mq("md"){
+    margin-top: rem(24);
+    width: rem(276);
+  }
+}
+
+.voice-card__inner{
+  margin-bottom: rem(4);
+  @include mq("md"){
+    margin-bottom: rem(8);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.voice-card__age{
+  font-size: rem(12);
+  font-weight: $regular;
+  color: $black;
+  line-height: 1;
+  font-family:"Noto Sans JP";
+  margin-bottom: rem(3);
+}
+
+.voice-card__lead{
+  display: inline-block;
+  color: $green;
+  font-size: rem(12);
+  line-height: 1;
+  font-weight: $regular;
+  padding: rem(8) rem(11);
+  border: rem(1) solid $green;
+  @include mq("md"){
+    padding: rem(10) rem(15);
+  }
+}
+
+.voice-card__title{
+  color: $black;
+  font-size: rem(16);
+  line-height: 1.45;
+  font-family: "Noto Sans JP";
+  border-bottom: rem(1) solid $green;
+  padding-bottom: rem(2);
+  margin-bottom: rem(20);
+  @include mq("md"){
+    font-size:rem(24) ;
+    line-height: 1.5;
+    margin-bottom: rem(43);
+  }
+}
+
+.voice-card__copy{
+  color: $black;
+  font-size: rem(16);
+  line-height: 1.5;
+  font-weight: $regular;
+  font-family: "Noto Sans JP";
+  margin-top: rem(-4);
+}

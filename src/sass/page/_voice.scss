@@ -1,0 +1,57 @@
+@use "global" as *;
+
+.voice{
+  padding-top: rem(81);
+  margin-bottom: rem(80);
+  @include mq("md"){
+    padding-top:rem(134) ;
+    margin-bottom: rem(141);
+    position: relative;
+  }
+}
+
+.voice__img1{
+  @include mq("md"){
+    width: rem(301);
+    height:rem(138) ;
+    position: absolute;
+    top: rem(24);
+    left: rem(100);
+  }
+}
+
+.voice__inner{
+  position: relative;
+}
+
+.voice__cards{
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(40);
+  align-items: center;
+  margin: rem(42) 0 rem(41);
+  @include mq("md"){
+    flex-direction: initial;
+    column-gap: rem(40);
+    row-gap:0 ;
+    margin: rem(27) 0 rem(80);
+  }
+}
+
+.voice__btn{
+  display: flex;
+  justify-content: center;
+  @include mq("md"){
+    margin-right: rem(3.5);
+  }
+}
+
+.voice__img2{
+  @include mq("md"){
+    width: rem(71);
+    height:rem(162) ;
+    position: absolute;
+    bottom: rem(-71);
+    right: rem(25);
+  }
+}

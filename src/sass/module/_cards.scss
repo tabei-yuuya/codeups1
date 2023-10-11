@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.cards{
+  min-width: rem(333);
+  width: 100%;
+  @include mq("md"){
+    max-width: rem(1079);
+  }
+}
+
+.cards__items{
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(40);
+  @include mq("md"){
+    // flex-direction: row;
+  }
+}
