@@ -1,6 +1,7 @@
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
-
+  
   var topBtn = $('.page-top');
+  $(".page-top").hide();
 
   // ボタンの表示設定
   $(window).scroll(function () {
@@ -22,8 +23,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
 // // フッター手前でストップ
-$(".page-top").hide();
-
 $(document).ready(function() {
   // 変数の宣言と初期化
   var scrollHeight = $(document).height();
