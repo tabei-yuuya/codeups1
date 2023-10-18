@@ -101,6 +101,8 @@ $(document).ready(function() {
   var swiper = new Swiper(".swiper2", {
     loop: true,
     slidesPerView: 1.26,
+    spaceBetween: 24,
+    speed: 2000,
     breakpoints: {
       768: {
         slidesPerView: 3.29,
@@ -111,12 +113,6 @@ $(document).ready(function() {
         spaceBetween: 41,
       },
     },
-    spaceBetween: 24,
-    speed: 2000,
-    // autoplay: {
-    //   delay: 1000,
-    //   disableOnInteraction: false,
-    // },
 
     navigation: {
       nextEl: ".campaign__next",
