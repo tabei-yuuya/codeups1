@@ -6,7 +6,7 @@
   position: relative;
   overflow: hidden;
   @include mq("md"){
-    margin-top: rem(109);
+    margin-top: rem(110);
     padding-bottom: rem(134);
   }
 }
@@ -14,7 +14,7 @@
 .campaign__wrap{
   margin:rem(26) 0 rem(40) rem(15) ;
   @include mq("md"){
-    margin:rem(38) 0 rem(80) rem(180) ;
+    margin:rem(37) 0 rem(80) rem(180) ;
   }
 }
 

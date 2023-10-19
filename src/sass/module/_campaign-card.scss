@@ -32,8 +32,8 @@
  border: rem(1) solid $green;
  margin-bottom:rem(4) ;
    @include mq("md"){
-     padding: rem(9) rem(16);
-     margin-bottom:rem(9) ;
+     padding: rem(9) rem(14) rem(11) rem(16);
+     margin-bottom:rem(8) ;
    }
 }
 

@@ -105,8 +105,8 @@
   font-weight: $regular;
   color: $black;
   @include mq("md"){
-    margin-top: rem(2);
     margin-left: rem(34);
+    letter-spacing: -0.005em;
   }
 }
 .contact__title span{

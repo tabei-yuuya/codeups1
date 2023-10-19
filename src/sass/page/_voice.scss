@@ -29,12 +29,12 @@
   flex-direction: column;
   row-gap: rem(40);
   align-items: center;
-  margin: rem(42) 0 rem(41);
+  margin: rem(42) 0 rem(37);
   @include mq("md"){
     flex-direction: initial;
     column-gap: rem(40);
     row-gap:0 ;
-    margin: rem(27) 0 rem(80);
+    margin: rem(27) 0 rem(81);
   }
 }
 
@@ -51,7 +51,7 @@
     width: rem(71);
     height:rem(162) ;
     position: absolute;
-    bottom: rem(-71);
+    bottom: rem(-69);
     right: rem(25);
   }
 }
