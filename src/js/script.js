@@ -105,11 +105,11 @@ $(document).ready(function() {
     speed: 2000,
     breakpoints: {
       768: {
-        slidesPerView: 3.29,
+        slidesPerView: 2.29,
         spaceBetween: 30,
       },
       1024: {
-        slidesPerView: 3.49,
+        slidesPerView: 2.5,
         spaceBetween: 41,
       },
     },
