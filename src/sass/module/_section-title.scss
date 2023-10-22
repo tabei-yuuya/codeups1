@@ -32,4 +32,9 @@
   font-size: rem(12);
   color: $green;
   margin-top: rem(1);
+  font-family: "Noto Sans JP";
+  @include mq("md"){
+    margin-top: rem(-2);
+
+  }
 }

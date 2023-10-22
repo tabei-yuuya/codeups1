@@ -5,8 +5,8 @@
   padding: rem(76) 0 rem(83);
   background-color: $green2;
   @include mq("md"){
-    margin-top: rem(142);
-    padding: rem(88) 0 rem(53);
+    margin-top: rem(141);
+    padding: rem(89) 0 rem(52);
   }
 }
 
@@ -24,18 +24,18 @@
 .information__img{
   width: rem(345);
   height:rem(227) ;
-  margin: rem(26) 0 rem(27);
+  margin: rem(27) 0 rem(27);
   @include mq("md"){
     width: rem(540);
     height: rem(356);
-    margin: rem(37) rem(48) rem(48) 0;
+    margin: rem(40) rem(48) rem(48) 0;
   }
 }
 
 .information__box{
   max-width:rem(492) ;
   @include mq("md"){
-    margin-top: rem(-15);
+    margin-top: rem(-13);
   }
 }
 

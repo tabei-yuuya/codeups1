@@ -17,7 +17,7 @@
   @include mq("md"){
     width:rem(301) ;
     height: rem(138);
-    top: rem(-40);
+    top: rem(-41);
     right: rem(50);
   }
 }
@@ -117,14 +117,16 @@
   color: $green;
   font-size: rem(12);
   line-height: 1;
-  margin-top: rem(-1);
-  margin-bottom: rem(13);
+  margin: rem(-5) 0 rem(18);
+  font-family: "Noto Sans JP";
 }
 .contact__title.contact__title--sub:nth-last-child(2){
   color: $green;
   font-size: rem(14);
   line-height: 1;
-  margin-bottom: rem(40);
+  margin-bottom: rem(42);
+  font-family: "Noto Sans JP";
+
 }
 
 .contact__btn{
