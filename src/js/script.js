@@ -112,6 +112,10 @@ $(document).ready(function() {
         slidesPerView: 2.5,
         spaceBetween: 41,
       },
+      1440:{
+        slidesPerView: 3.49,
+        spaceBetween: 41,
+      },
     },
 
     navigation: {
