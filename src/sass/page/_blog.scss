@@ -15,7 +15,7 @@
 .blog__img{
   @include mq("md"){
     width: rem(437);
-    height: rem(201);
+    aspect-ratio: 437 / 201;
     position: absolute;
     top: rem(24);
     left: rem(100);
@@ -23,17 +23,12 @@
 }
 
 .blog__inner{
-    max-width: $inner;
-    width: 100%;
-    padding-right: $padding-sp;
-    padding-left: $padding-sp;
-    margin-right: auto;
-    margin-left: auto;
-    @include mq("md") {
-      max-width: $inner + strip-unit($padding-pc) * 2;
-      padding-right: $padding-pc;
-      padding-left: $padding-pc;
-    }
+  max-width: rem(600);
+  width: 100%;
+  margin: 0 auto;
+  @include mq("md"){
+    max-width:rem(1440) ;
+  }
   }
 
 

@@ -1,7 +1,11 @@
 @use "global" as *;
 
 .about{
+  max-width: rem(600);
+  width: 100%;
+  margin:0 auto;
   @include mq("md"){
+    max-width: rem(1440);
     position: relative;
 }
 }
@@ -30,22 +34,23 @@
 
 .about__img1.about__img--sm{
   width: (128 / 375) * 100vw;
-  height: (194 / 375) * 100vw;
+  aspect-ratio: 194 / 128;
   z-index: 100;
   margin: 0;
   @include mq("md"){
   width: (399 / 1440) * 100vw;
-  height: (606 / 1440) * 100vw;
+  aspect-ratio: 606 / 400;
+
   }
 }
 
 .about__img1.about__img--lg{
   width: (281 / 375) * 100vw;
-  height:(186 / 375) * 100vw;
+  aspect-ratio: 281 / 186;
   margin: rem(27) 0 0 rem(-64);
   @include mq("md"){
   width: (880 / 1440) * 100vw;
-  height:(581 / 1440) * 100vw;
+  aspect-ratio:880 / 581 ;
   margin: rem(80) 0 0 rem(-199);
   }
 }
@@ -86,7 +91,7 @@
   color: $black;
   line-height: 1.5;
   font-weight: $regular;
-  font-family: "Noto Sans JP";
+  font-family: $third-font-family;
   margin-bottom: rem(16);
   @include mq("md"){
     width: rem(400);
@@ -104,7 +109,7 @@
 .about__img2{
   @include mq("md"){
     width: rem(194);
-    height:rem(181) ;
+    aspect-ratio:194 / 181 ;
     position: absolute;
     right: rem(83);
     bottom: rem(-90);

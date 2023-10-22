@@ -95,7 +95,6 @@
           </li>
         </ul>
       </nav>
-
     </div>
 
     <div class="hamburger u-mobile js-hamburger">
@@ -260,7 +259,7 @@
   <main>
     <!-- campaign -->
     <section id="campaign" class="campaign">
-
+      <div class="campaign__inner inner">
       <div class="section-title">
         <h2 class="section-title__main">
           <span>C</span>ampaign
@@ -269,8 +268,8 @@
           キャンペーン
         </p>
       </div>
-      <!-- campaign__wrap -->
-    <div class="campaign__wrap">
+      <!-- campaign__contents -->
+    <div class="campaign__contente">
   <!-- <swiper> -->
     <div class="campaign__swiper swiper2">
       <div class="swiper__button">
@@ -278,8 +277,74 @@
         <div class="campaign__prev u-desktop"></div>
       </div>
     <!-- Slider wrapper -->
-    <div class=" swiper-wrapper">
+    <div class="swiper-wrapper campaign__wrapper">
       <!-- Slides -->
+       <div class="campaing__slide swiper-slide">
+        <a href="#" class="campaign-card">
+          <div class="campaign-card__box">
+            <div class="campaign-card__img">
+              <img src="./assets/images/campaign1.jpg" alt="カラフルな魚たちが泳いでいる画像">
+            </div>
+            <div class="campaign-card__body">
+              <p class="campaign-card__lead">ライセンス講習</p>
+              <p class="campaign-card__title">ライセンス取得ライセンス取得ライセンス取得ライセンス取得ライセンス取得ライセンス取得ライセンス取得ライセンス取得ライセンス取得ライセンス取得ライセンス取得ライセンス取</p>
+              <p class="campaign-card__copy">全部コミコミ（お一人様）</p>
+              <div class="campaign-card__price">
+                <p class="campaign-card__price--sub">&yen;56,000</p>
+                <p class="campaign-card__price--main">&yen;46,000</p>
+              </div>
+            </div>
+          </div>
+        </a>
+       </div>
+       <div class="campaing__slide swiper-slide">
+        <a href="#" class="campaign-card">
+          <div class="campaign-card__img">
+            <img src="./assets/images/campaign2.jpg" alt="海の上にボートが３隻">
+          </div>
+          <div class="campaign-card__body">
+            <p class="campaign-card__lead">体験ダイビング</p>
+            <p class="campaign-card__title">貸切体験ダイビング</p>
+            <p class="campaign-card__copy">全部コミコミ（お一人様）</p>
+            <div class="campaign-card__price">
+              <p class="campaign-card__price--sub">&yen;24,000</p>
+              <p class="campaign-card__price--main">&yen;18,000</p>
+            </div>
+          </div>
+        </a>
+       </div>
+       <div class="campaing__slide swiper-slide">
+        <a href="#" class="campaign-card">
+          <div class="campaign-card__img">
+            <img src="./assets/images/campaign3.jpg" alt="暗い水の中にたくさんのクラゲ">
+          </div>
+          <div class="campaign-card__body">
+            <p class="campaign-card__lead">体験ダイビング</p>
+            <p class="campaign-card__title">ナイトダイビング</p>
+            <p class="campaign-card__copy">全部コミコミ（お一人様）</p>
+            <div class="campaign-card__price">
+              <p class="campaign-card__price--sub">&yen;10,000</p>
+              <p class="campaign-card__price--main">&yen;8,000</p>
+            </div>
+          </div>
+        </a>
+       </div>
+       <div class="campaing__slide swiper-slide">
+        <a href="#" class="campaign-card">
+          <div class="campaign-card__img">
+            <img src="./assets/images/campaign4.jpg" alt="4人のダイバーが海面に顔を出している画像">
+          </div>
+          <div class="campaign-card__body">
+            <p class="campaign-card__lead">ファンダイビング</p>
+            <p class="campaign-card__title">貸切ファンダイビング</p>
+            <p class="campaign-card__copy">全部コミコミ（お一人様）</p>
+            <div class="campaign-card__price">
+              <p class="campaign-card__price--sub">&yen;20,000</p>
+              <p class="campaign-card__price--main">&yen;16,000</p>
+            </div>
+          </div>
+        </a>
+       </div>
        <div class="campaing__slide swiper-slide">
         <a href="#" class="campaign-card">
           <div class="campaign-card__img">
@@ -349,8 +414,9 @@
   </div>
   <!-- </swiper>  -->
     <div class="campaign__btn">
-      <a href="#" class="btn">View more</a>
+      <a href="#" class="btn">View more<span class="btn__arrow"></span></a>
     </div>
+  </div>
     </section>
     <!-- campaign -->
 
@@ -382,7 +448,7 @@
               <p class="about__text about__text--sm">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
                 <br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
                 <div class="about__btn">
-                  <a href="#" class="btn">View more</a>
+                  <a href="#" class="btn">View more<span class="btn__arrow"></span></a>
                 </div>
               </div>
             </div>
@@ -421,7 +487,7 @@
           </div>
 
           <div class="information__btn">
-          <a href="#" class="btn">View more</a>
+          <a href="#" class="btn">View more<span class="btn__arrow"></span></a>
          </div>
         </div>
       </div>
@@ -434,8 +500,7 @@
       <div class="blog__img u-desktop">
         <img src="./assets/images/blog-hanadai.png" alt="左に向かって泳ぐ6匹のキンギョハナダイのイラスト">
       </div>
-      <div class="blog__inner">
-
+      <div class="blog__inner inner">
         <div class="section-title ">
           <h2 class="section-title__main section-title--blog">
             <span>B</span>log
@@ -500,7 +565,7 @@
         </div>
 
         <div class="blog__btn">
-          <a href="#" class="btn">View more</a>
+          <a href="#" class="btn">View more<span class="btn__arrow"></span></a>
         </div>
 
       </div>
@@ -575,7 +640,7 @@
         </div>
 
         <div class="voice__btn">
-          <a href="#" class="btn">View more</a>
+          <a href="#" class="btn">View more<span class="btn__arrow"></span></a>
         </div>
         <div class="voice__img2 u-desktop">
           <img src="./assets/images/voice-ibaratatu.png" alt="左を向いているタツノオトシゴのイラスと">
@@ -659,7 +724,7 @@
         </div>
 
         <div class="price__btn">
-          <a href="#" class="btn">View more</a>
+          <a href="#" class="btn">View more<span class="btn__arrow"></span></a>
         </div>
 
       </div>
@@ -703,7 +768,7 @@
               </p>
 
               <div class="contact__btn">
-                <a href="#" class="btn">Contact us</a>
+                <a href="#" class="btn">Contact us<span class="btn__arrow"></span></a>
               </div>
           </div>
 

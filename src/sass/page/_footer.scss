@@ -19,11 +19,11 @@
 
 .footer__img{
   width: rem(120);
-  height:rem(45) ;
+  aspect-ratio: 120 / 45;
   margin-bottom:rem(18) ;
   @include mq("md"){
     width: rem(200);
-    height:rem(75) ;
+    aspect-ratio: 200 / 75;
     margin: 0 rem(43) rem(24) 0;
   }
 }
@@ -108,11 +108,12 @@
   font-size: rem(16);
   line-height: 1;
   font-weight: $bold;
-  font-family: "Noto Sans JP";
+  font-family: $third-font-family;
 }
 
 .footer__img2{
   width: rem(18);
+  aspect-ratio: 1 / 1;
   margin: rem(-1) rem(5) 0 0;
 }
 
@@ -120,7 +121,7 @@
 .footer__description{
   font-size: rem(16);
   line-height: 1;
-  font-family: "Noto Sans JP";
+  font-family: $third-font-family;
   font-weight: $regular;
   margin: rem(26) 0 0 rem(25);
 }

@@ -13,7 +13,7 @@
 .voice__img1{
   @include mq("md"){
     width: rem(301);
-    height:rem(138) ;
+    aspect-ratio: 310 / 138;
     position: absolute;
     top: rem(24);
     left: rem(100);
@@ -22,6 +22,11 @@
 
 .voice__inner{
   position: relative;
+  max-width: rem(600);
+  width: 100%;
+  @include mq("md"){
+    max-width: rem(1080);
+  }
 }
 
 .voice__cards{
@@ -49,7 +54,7 @@
 .voice__img2{
   @include mq("md"){
     width: rem(71);
-    height:rem(162) ;
+    aspect-ratio: 71 / 162;
     position: absolute;
     bottom: rem(-69);
     right: rem(25);

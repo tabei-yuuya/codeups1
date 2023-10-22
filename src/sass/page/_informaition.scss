@@ -11,19 +11,22 @@
 }
 
 .information__wrapper{
+  max-width: rem(600);
   width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   @include mq("md"){
+    max-width:rem(1080);
     flex-direction: initial;
     align-items: center;
 }
 }
 
 .information__img{
-  width: rem(345);
-  height:rem(227) ;
+  width: 100%;
+  // height:rem(227) ;
   margin: rem(27) 0 rem(27);
   @include mq("md"){
     width: rem(540);
@@ -33,8 +36,9 @@
 }
 
 .information__box{
-  max-width:rem(492) ;
+  width: 100%;
   @include mq("md"){
+    max-width:rem(492) ;
     margin-top: rem(-13);
   }
 }
@@ -43,7 +47,7 @@
   font-size: rem(20);
   font-weight: $bold;
   line-height: 1;
-  font-family: "Noto Sans JP";
+  font-family: $third-font-family;
   color: $black;
   padding-bottom: rem(4);
   margin-bottom: rem(8);
@@ -59,14 +63,14 @@
   font-size: rem(16);
   font-weight: $regular;
   line-height: 1.5;
-  font-family: "Noto Sans JP";
+  font-family: $third-font-family;
   color: $black;
   margin-bottom: rem(40);
 }
 
 .information__btn{
-  margin:0 0 0 rem(70);
+  text-align: center;
   @include mq("md"){
-    margin: 0  0 0 rem(143);
-  } 
+    margin: 0  0 0 rem(100);
+  }
 }
