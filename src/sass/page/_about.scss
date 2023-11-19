@@ -4,54 +4,49 @@
   max-width: rem(600);
   width: 100%;
   margin:0 auto;
+  padding-bottom: rem(183);
   @include mq("md"){
     max-width: rem(1440);
     position: relative;
-}
-}
+    padding-bottom: rem(300);
 
-.about__contents{
-  @include mq("md"){
-  position: relative;
-  }
+}
 }
 
 .about__content{
-  max-width: rem(1080);
   width: 100%;
-  margin: rem(27) 0 rem(40);
-  position: relative;
-  display: flex;
-  justify-content: center;
+  margin-top: rem(27);
   @include mq("md"){
-    margin: rem(39) 0 rem(40);
+    // margin: rem(39) 0 rem(40);
+    margin-top: rem(39);
   }
 }
 
-.about__img{
+.about__img1{
   object-fit: cover;
 }
 
 .about__img1.about__img--sm{
-  width: (128 / 375) * 100vw;
+  width: 37.1%;
   aspect-ratio: 194 / 128;
+  position: relative;
   z-index: 100;
   margin: 0;
   @include mq("md"){
-  width: (399 / 1440) * 100vw;
-  aspect-ratio: 606 / 400;
-
+    width: 36.9%;
+    aspect-ratio: 606 / 400;
   }
 }
 
 .about__img1.about__img--lg{
-  width: (281 / 375) * 100vw;
+  width: 81.44%;
   aspect-ratio: 281 / 186;
-  margin: rem(27) 0 0 rem(-64);
+  margin-top: -48.7%;
+  margin-left: auto;
   @include mq("md"){
-  width: (880 / 1440) * 100vw;
-  aspect-ratio:880 / 581 ;
-  margin: rem(80) 0 0 rem(-199);
+    width: 81.48%;
+    aspect-ratio:880 / 581 ;
+    margin-top: -48.5%;
   }
 }
 
@@ -61,13 +56,17 @@
 }
 
 .about__box{
+  margin-top: rem(40);
   @include mq("md"){
     display: flex;
     max-width: rem(840);
     width: 100%;
-    position: absolute;
-    top: (201 / 1440) * 100vw;
-    left: (199 / 1440) * 100vw;
+    margin-top: -50%;
+    margin-left: 20%;
+    // position: absolute;
+    // top: (201 / 1440) * 100vw;
+    // left: (199 / 1440) * 100vw;
+    position: relative;
     z-index: 110;
   }
 }
@@ -77,12 +76,16 @@
   color: $green;
   line-height: 1;
   font-weight: $regular;
-  margin-bottom: rem(15.7);
   @include mq("md"){
     font-size: rem(80);
     color: $white;
     line-height: 1.25;
-    margin-right: rem(40);
+  }
+}
+
+.about__box2{
+  @include mq("md"){
+    margin-left: rem(40);
   }
 }
 
@@ -92,16 +95,16 @@
   line-height: 1.5;
   font-weight: $regular;
   font-family: $third-font-family;
-  margin-bottom: rem(16);
+  margin-top: rem(15.7);
   @include mq("md"){
     width: rem(400);
     color: $white;
     line-height: 1.549;
-    margin-bottom: rem(35);
   }
 }
 
 .about__btn{
+  margin-top: rem(16);
   display: flex;
   justify-content: center;
 }
@@ -112,6 +115,6 @@
     aspect-ratio:194 / 181 ;
     position: absolute;
     right: rem(83);
-    bottom: rem(-90);
+    bottom: rem(-300);
   }
 }

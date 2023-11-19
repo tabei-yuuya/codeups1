@@ -1,11 +1,9 @@
 @use "global" as *;
 
 .voice{
-  padding-top: rem(81);
-  margin-bottom: rem(80);
+  padding-bottom: rem(78);
   @include mq("md"){
-    padding-top:rem(134) ;
-    margin-bottom: rem(141);
+    padding-bottom: rem(141);
     position: relative;
   }
 }
@@ -32,21 +30,21 @@
 .voice__cards{
   display: flex;
   flex-direction: column;
-  row-gap: rem(40);
-  align-items: center;
-  margin: rem(41) 0 rem(41);
+  gap: rem(40);
+  margin-top: rem(41);
   @include mq("md"){
-    flex-direction: initial;
-    column-gap: rem(40);
-    row-gap:0 ;
-    margin: rem(27) 0 rem(80);
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: rem(27);
   }
 }
 
 .voice__btn{
+  margin-top: rem(41);
   display: flex;
   justify-content: center;
   @include mq("md"){
+    margin-top: rem(80);
     margin-right: rem(3.5);
   }
 }

@@ -1,96 +1,128 @@
 @use "global" as *;
+
 .campaign-card{
-  display: block;
-  box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
+  width: rem(280);
+  box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
+
 
 .campaign-card__img img{
-  aspect-ratio: 333 / 223;
+  aspect-ratio: 280 / 188;
+  width: 100%;
   object-fit: cover;
-}
-
-.campaign-card__body{
-  padding: rem(20) rem(16) rem(14);
   @include mq("md"){
-    padding: rem(24) rem(16) rem(11);
-}
-}
-
-.campaign-card__lead{
- display: inline-block;
- color: $green;
- font-size: rem(12);
- line-height: 1;
- font-weight: $regular;
- font-family: "Noto Sans JP";
- padding: rem(8) rem(11);
- border: rem(1) solid $green;
- margin-bottom:rem(4) ;
-   @include mq("md"){
-     padding: rem(9) rem(14) rem(11) rem(16);
-     margin-bottom:rem(8) ;
-   }
-}
-
-
-.campaign-card__title{
-  color: $black;
-  font-size: rem(16);
-  line-height: 1;
-  font-family: "Noto Sans JP";
-  padding-bottom: rem(12);
-  border-bottom: rem(1) solid $green;
-  margin-bottom: rem(12);
-  @include mq("md"){
-    margin-bottom: rem(15);
+    aspect-ratio: 333 / 233;
   }
 }
 
-.campaign-card__copy{
-  text-align: center;
-  font-size: rem(14);
-  font-family: "Noto Sans JP";
+.campaign-card__contents{
+  padding: rem(16) rem(16) rem(24);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   @include mq("md"){
-    text-align: left;
+    padding: rem(24) rem(16) rem(40);
+  }
+}
+
+.campaign-card__head{
+  flex-grow: 1;
+}
+
+.campaign-card__label{
+  color: $green;
+  font-size: rem(12);
+  line-height: 1.83333;
+  padding: rem(3) rem(11);
+  border: rem(1) solid green;
+  display: inline-block;
+  @include mq("md"){
+    padding: rem(5) rem(15);
+  }
+}
+
+.campaign-card__title{
+  margin-top: rem(4);
+  font-size: rem(16);
+  // font-weight: ;
+}
+
+.campaign-card__body{
+  position: relative;
+  margin-top: rem(8);
+}
+
+.campaign-card__body::before{
+  position: absolute;
+  content: "";
+  background-color: $green;
+  border-radius: rem(5);
+  width: 100%;
+  height: rem(1);
+  top: 0;
+  left: 0;
+}
+
+.campaign-card__info{
+  text-align: center;
+  margin-top: rem(8);
+  font-size: rem(14);
+  lighting-color: 1.7143;
+  @include mq("md"){
+    margin-top: rem(16);
     font-size: rem(16);
-    margin: 0 0 rem(3) rem(57);
+    line-height: 1.5;
   }
 }
 
 .campaign-card__price{
+  margin-top: rem(8);
   display: flex;
-  align-items: baseline;
   justify-content: center;
-  font-family: "Lato";
-  padding: rem(8) rem(19);
+  align-items: baseline;
+  gap: rem(16);
+  // font-family: serif;
+  // font-weight: normal;
+  line-height: 1;
   @include mq("md"){
-    // padding: rem(3) rem(14);
-    padding: rem(5) 0 rem(28);
+    margin-top: rem(7);
+    gap: rem(24);
   }
 }
 
-.campaign-card__price--sub{
-  color: $black;
+.campaign-card__price--lg{
   font-size: rem(20);
-  font-weight: $bold;
-  line-height: 1;
-  text-decoration: line-through rem(3) #C94800;
+  position: relative;
+  padding-right: rem(2);
   @include mq("md"){
     font-size: rem(24);
   }
 }
 
-.campaign-card__price--main{
-  color: $green;
-  font-size: rem(32);
-  line-height: 1;
-  margin-left: rem(19);
+.campaign-card__price--lg::after{
+  position: absolute;
+  content: "";
+  // background-color: ;
+  width: 100%;
+  height: rem(3);
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -51%);
   @include mq("md"){
-    font-size:rem(40) ;
-    margin-left: rem(26);
+    top: 50%;
   }
 }
 
+.campaign-card__price--sm{
+  font-size: rem(32);
+  color: $green;
+  @include mq("md"){
+    font-size: rem(40);
+  }
+}
 
 
 
