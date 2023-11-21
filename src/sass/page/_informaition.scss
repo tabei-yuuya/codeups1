@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .information{
-  padding: rem(76) 0 rem(83);
+  padding: rem(76) 0 rem(84);
   background-color: $green2;
   @include mq("md"){
     margin-top: rem(140);
@@ -65,7 +65,7 @@
   line-height: 1.5;
   font-family: $third-font-family;
   color: $black;
-  margin-top: rem(8);
+  margin-top: rem(9);
   @include mq("md"){
     margin-top: rem(7);
   }
@@ -73,7 +73,7 @@
 
 .information__btn{
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(39);
   @include mq("md"){
     margin: 0  0 0 rem(100);
   }

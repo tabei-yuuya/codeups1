@@ -7,13 +7,17 @@
   color: $white;
   font-family: $base-font-family;
   font-style: normal;
-  padding: rem(16) rem(91) rem(15) rem(40);
+  padding: rem(15) rem(88) rem(15) rem(40);
   line-height: rem(22);
   background-color: $green;
   transition: all 0.3s ease 0s;
   position: relative;
   border: 1px solid $green;
   z-index: 100;
+  // width: rem(206);
+  @include mq("md"){
+    // width: rem(202);
+  }
 }
 
 .btn__text {
@@ -59,8 +63,8 @@
   content: '';
   position: absolute;
   display: inline-block;
-  top: 44%;
-  right: 21%;
+  top: 43%;
+  right: 23%;
   width: rem(39);
   height: rem(5);
   border-bottom: 1px solid $white;

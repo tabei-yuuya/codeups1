@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .voice{
-  padding-bottom: rem(79);
+  padding-bottom: rem(84);
   @include mq("md"){
     padding-bottom: rem(141);
     position: relative;
@@ -40,7 +40,7 @@
 }
 
 .voice__btn{
-  margin-top: rem(41);
+  margin-top: rem(38);
   display: flex;
   justify-content: center;
   @include mq("md"){

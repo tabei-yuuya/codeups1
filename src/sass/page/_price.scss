@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .price{
-  padding-bottom:rem(77);
+  padding: rem(77) 0 rem(84);
+  background-color: $green2;
   @include mq("md"){
-    background-color: $green2;
     padding: rem(101) 0 rem(103);
     position: relative;
   }
@@ -18,7 +18,7 @@
 }
 
 .price__container{
-  margin-top: rem(28);
+  margin-top: rem(26);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +33,7 @@
 }
 
 .price__content{
-  margin-top: rem(44);
+  margin-top: rem(45);
   width: 100%;
   @include mq("md"){
     display: flex;
@@ -112,9 +112,12 @@
   color: $black;
   font-size: rem(14);
   line-height: 1;
+  letter-spacing: -0.07em;
   font-weight: $regular;
   float: right;
   margin-top: rem(13);
+  text-align: right;
+  width: 25%;
   @include mq("md"){
     font-size: rem(16);
   }
@@ -155,7 +158,7 @@
 }
 
 .price__btn{
-  margin-top: rem(45);
+  margin-top: rem(44);
  display: flex;
  justify-content: center;
  @include mq("md"){

@@ -48,12 +48,12 @@
 
 .blog-card__figure{
   width: 100%;
-  padding: rem(16) rem(16) 0 ;
+  padding: rem(16) rem(16) 0;
 }
 
 .blog-card__img img{
-  aspect-ratio: 301 / 201 ;
   max-width: 100%;
+  aspect-ratio: 301 / 201 ;
   vertical-align: bottom;
   object-fit: cover;
 }
@@ -78,7 +78,7 @@
   font-family: $third-font-family;
   padding-bottom: rem(3);
   border-bottom: rem(1) solid $green;
-  margin-top: rem(7);
+  margin-top: rem(8);
   flex-grow: 1;
   @include mq("md"){
     padding-bottom: rem(7);

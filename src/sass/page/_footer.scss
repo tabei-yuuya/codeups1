@@ -3,8 +3,7 @@
 .footer{
   height: 100%;
   background-color: $green;
-  margin-top: rem(103);
-  padding-top: rem(48);
+  padding-top: rem(49);
   @include mq("md"){
     margin-top: rem(159);
     padding-top: rem(80);
@@ -36,7 +35,7 @@
 
 .footer__icon{
   display: flex;
-  margin-top: rem(18);
+  margin-top: rem(12);
   @include mq("md"){
     margin: rem(39) 0 0 rem(24);
   }
@@ -72,11 +71,11 @@
 .footer__item{
   display: flex;
   flex-direction: column;
-  gap: rem(24);
+  gap: rem(26);
 }
 
 .footer__item + .footer__item{
-  margin-top: rem(24);
+  margin-top: rem(42);
 }
 
 .footer__term{
@@ -115,8 +114,8 @@
 
 .footer__container{
   display: grid;
-  gap: rem(40) rem(16);
-  grid-template-areas: 
+  gap: rem(40) rem(7);
+  grid-template-areas:
     "a c"
     "b d"
   ;
@@ -148,7 +147,7 @@
   font-size: rem(12);
   line-height: 1;
   color: $white;
-  margin: rem(40) rem(14) 0;
+  margin: rem(44) rem(14) 0;
   padding-bottom: rem(59);
   @include mq("md"){
     padding-bottom: rem(82);

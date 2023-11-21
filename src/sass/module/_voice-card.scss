@@ -12,7 +12,7 @@
   }
 }
 .voice-card__item{
-  padding: rem(21) rem(16) rem(24);
+  padding: rem(24) rem(16) rem(23);
   @include mq("md"){
     padding: rem(24);
   }
@@ -65,7 +65,7 @@
   line-height: 1;
   font-weight: $regular;
   font-family: $third-font-family;
-  margin-top: rem(3);
+  margin-top: rem(1);
   padding: rem(8) rem(11);
   border: rem(1) solid $green;
   @include mq("md"){
@@ -94,7 +94,7 @@
   line-height: 1.5;
   font-weight: $regular;
   font-family: $third-font-family;
-  margin-top: rem(19);
+  margin-top: rem(17);
   @include mq("md"){
     margin-top: rem(42);
   }

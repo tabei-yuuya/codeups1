@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .campaign-cards{
-  margin-top: rem(24);
+  margin-top: rem(25.5);
   @include mq("md"){
     margin-top: rem(40);
   }

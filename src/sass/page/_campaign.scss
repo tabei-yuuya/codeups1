@@ -2,7 +2,7 @@
 
 .campaign{
   margin-top:rem(39) ;
-  padding-bottom: rem(77);
+  padding-bottom: rem(78);
   position: relative;
   overflow: hidden;
   @include mq("md"){
@@ -76,7 +76,7 @@
 
 
 .campaign__btn{
-  margin-top: rem(40);
+margin-top: rem(37.8);
  display: flex;
  justify-content: center;
  @include mq("md"){

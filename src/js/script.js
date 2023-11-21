@@ -100,7 +100,7 @@ $(document).ready(function() {
 
   var swiper = new Swiper(".swiper2", {
     loop: true,
-    slidesPerView: 1.21,
+    slidesPerView: 1.213,
     spaceBetween: 24,
     speed: 2000,
     breakpoints: {
