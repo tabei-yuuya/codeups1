@@ -38,7 +38,7 @@
 .voice-card__body{
   margin-top: rem(-3);
   @include mq("md"){
-    margin-top: rem(20);
+    margin-top: rem(23);
   }
 }
 
@@ -56,6 +56,9 @@
   color: $black;
   line-height: 1;
   font-family:$third-font-family;
+  @include mq("md"){
+    margin-top: rem(-3);
+  }
 }
 
 .voice-card__lead{
@@ -69,7 +72,8 @@
   padding: rem(8) rem(11);
   border: rem(1) solid $green;
   @include mq("md"){
-    padding: rem(10) rem(15) rem(10) rem(16);
+    // padding: rem(7) rem(12) rem(10) rem(19);
+    padding: rem(10) rem(16);
   }
 }
 
@@ -84,7 +88,8 @@
   @include mq("md"){
     font-size:rem(24) ;
     line-height: 1.5;
-    margin-top:rem(12);
+    margin-top:rem(10);
+    padding-bottom: rem(0);
   }
 }
 
@@ -96,6 +101,6 @@
   font-family: $third-font-family;
   margin-top: rem(17);
   @include mq("md"){
-    margin-top: rem(42);
+    margin-top: rem(40);
   }
 }

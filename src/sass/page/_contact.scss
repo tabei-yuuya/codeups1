@@ -44,6 +44,7 @@
   @include mq("md"){
     border-left: rem(1) solid $green;
     padding-top: rem(19.5);
+    margin-top: rem(1);
     margin-left: rem(82);
   }
 }
@@ -122,6 +123,7 @@
   line-height: 1;
   margin: rem(-5) 0 0;
   font-family: $third-font-family;
+  margin-left: rem(27);
 }
 .contact__title.contact__title--sub + .contact__title.contact__title--sub{
   color: $green;
@@ -129,6 +131,9 @@
   line-height: 1;
   margin-top: rem(18);
   font-family: $third-font-family;
+  @include mq("md"){
+    margin-top: rem(15);
+  }
 }
 
 .contact__btn{
@@ -136,7 +141,7 @@
   justify-content: center;
   margin-top: rem(38);
   @include mq("md"){
-    margin-top: rem(42);
+    margin-top: rem(41);
     margin-left: rem(33);
   }
 }

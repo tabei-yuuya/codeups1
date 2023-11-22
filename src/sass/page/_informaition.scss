@@ -5,7 +5,7 @@
   background-color: $green2;
   @include mq("md"){
     margin-top: rem(140);
-    padding: rem(89) 0 rem(52);
+    padding: rem(89) 0 rem(100);
   }
 }
 
@@ -31,7 +31,7 @@
     width: rem(540);
     aspect-ratio: 540 / 356;
     // margin: rem(40) rem(48) rem(48) 0;
-    margin-top: rem(40);
+    margin-top: rem(39);
   }
 }
 
@@ -40,8 +40,7 @@
   margin-top: rem(27);
   @include mq("md"){
     max-width:rem(492) ;
-    // margin-top: rem(-13);
-    margin: rem(-13) 0 0 rem(48);
+    margin: rem(34) 0 0 rem(48);
   }
 }
 
@@ -74,7 +73,5 @@
 .information__btn{
   text-align: center;
   margin-top: rem(39);
-  @include mq("md"){
-    margin: 0  0 0 rem(100);
+  margin-left: rem(-2);
   }
-}

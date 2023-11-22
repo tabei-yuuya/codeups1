@@ -5,7 +5,7 @@
   background-color: $green;
   padding-top: rem(49);
   @include mq("md"){
-    margin-top: rem(159);
+    margin-top: rem(56);
     padding-top: rem(80);
   }
 }
@@ -37,7 +37,7 @@
   display: flex;
   margin-top: rem(12);
   @include mq("md"){
-    margin: rem(39) 0 0 rem(24);
+    margin: rem(40) 0 0 rem(42);
   }
 }
 
@@ -64,7 +64,7 @@
   color: $white;
   margin-top: rem(43);
   @include mq("md"){
-    margin-top: 0;
+    margin-top: rem(18);
   }
 }
 
@@ -150,6 +150,7 @@
   margin: rem(44) rem(14) 0;
   padding-bottom: rem(59);
   @include mq("md"){
+    margin-top: rem(80);
     padding-bottom: rem(82);
     font-size: rem(14);
     text-align: center;

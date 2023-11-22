@@ -3,7 +3,7 @@
 .voice{
   padding-bottom: rem(84);
   @include mq("md"){
-    padding-bottom: rem(141);
+    padding-bottom: rem(144);
     position: relative;
   }
 }
@@ -13,7 +13,7 @@
     width: rem(301);
     aspect-ratio: 310 / 138;
     position: absolute;
-    top: rem(24);
+    top: rem(-110);
     left: rem(100);
   }
 }
@@ -35,7 +35,7 @@
   @include mq("md"){
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: rem(27);
+    margin-top: rem(30);
   }
 }
 
@@ -44,7 +44,7 @@
   display: flex;
   justify-content: center;
   @include mq("md"){
-    margin-top: rem(80);
+    margin-top: rem(79);
     margin-right: rem(3.5);
   }
 }
@@ -54,7 +54,7 @@
     width: rem(71);
     aspect-ratio: 71 / 162;
     position: absolute;
-    bottom: rem(-69);
+    bottom: rem(-71);
     right: rem(25);
   }
 }
