@@ -104,18 +104,22 @@ $(document).ready(function() {
     spaceBetween: 24,
     speed: 2000,
     breakpoints: {
+      425:{
+        slidesPerView: 1.5,
+        spaceBetween: 30,
+      },
       768: {
-        slidesPerView: 2.29,
+        slidesPerView: 3,
         spaceBetween: 30,
       },
       1024: {
-        slidesPerView: 2.5,
-        spaceBetween: 41,
-      },
-      1440:{
         slidesPerView: 3,
         spaceBetween: 41,
       },
+      // 1440:{
+      //   slidesPerView: 3,
+      //   spaceBetween: 41,
+      // },
     },
 
     navigation: {
