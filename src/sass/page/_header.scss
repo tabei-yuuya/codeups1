@@ -46,6 +46,7 @@
 }
 
 .header__link--title img{
+  margin-top: rem(9);
   @include mq("md"){
     margin-top: rem(6);
 }

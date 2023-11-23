@@ -36,13 +36,15 @@
 }
 
 .hamburger.is-active span:first-child{
-  -webkit-transform: translateY(rem(12)) rotate(45deg);
-  transform: translateY(rem(12)) rotate(45deg);
+  -webkit-transform: translateY(rem(12)) rotate(35deg);
+  transform: translateY(rem(12)) rotate(35deg);
+  width: rem(40);
 }
 .hamburger.is-active span:nth-child(2){
   opacity: 0;
 }
 .hamburger.is-active span:nth-child(3){
-  -webkit-transform: translateY(rem(-12)) rotate(-45deg);
-  transform: translateY(rem(-12)) rotate(-45deg);
+  -webkit-transform: translateY(rem(-11)) rotate(-35deg);
+  transform: translateY(rem(-11)) rotate(-35deg);
+  width: rem(40);
 }

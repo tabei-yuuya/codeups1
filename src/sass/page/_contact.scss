@@ -13,7 +13,7 @@
   width: rem(109);
   aspect-ratio: 109 / 50;
   position: absolute;
-  top: rem(-26);
+  top: rem(-27);
   right: rem(15);
   @include mq("md"){
     width:rem(301) ;
@@ -92,7 +92,7 @@
 
 .contact__item{
   max-width: rem(600);
-  width: 100%;
+  width: rem(295);
   height: rem(160);
   background-color: $glay;
   margin: rem(16) auto 0;
@@ -123,13 +123,15 @@
   line-height: 1;
   margin: rem(-5) 0 0;
   font-family: $third-font-family;
-  margin-left: rem(27);
+  @include mq("md"){
+    margin-left: rem(27);
+  }
 }
 .contact__title.contact__title--sub + .contact__title.contact__title--sub{
   color: $green;
   font-size: rem(14);
   line-height: 1;
-  margin-top: rem(18);
+  margin-top: rem(16);
   font-family: $third-font-family;
   @include mq("md"){
     margin-top: rem(15);
@@ -139,7 +141,7 @@
 .contact__btn{
   display: flex;
   justify-content: center;
-  margin-top: rem(38);
+  margin-top: rem(40);
   @include mq("md"){
     margin-top: rem(41);
     margin-left: rem(33);

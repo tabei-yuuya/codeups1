@@ -76,11 +76,12 @@
 
 
 .campaign__btn{
-margin-top: rem(37.8);
+margin-top: rem(40);
+margin-left: rem(-3);
  display: flex;
  justify-content: center;
  @include mq("md"){
+   margin-left: rem(-2);
   margin-top: rem(80);
-  margin-left: rem(-2);
  }
 }
