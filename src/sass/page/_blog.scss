@@ -9,8 +9,7 @@
 }
 
 .blog::after{
-  @include mq("md")
-  {
+  @include mq("md"){
     background-image: url(/assets/images/blog1.jpg);
     background-repeat: no-repeat;
     background-position:top center;

@@ -60,11 +60,12 @@
   display: flex;
   align-items: center;
   height: inherit;
+  gap: rem(40);
 }
 
 .header__list{
   height: inherit;
-  margin-left: rem(40.3);
+  // margin-left: rem(40.3);
   text-align: center;
   display: flex;
   justify-content: center;
