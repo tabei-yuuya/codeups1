@@ -1,9 +1,7 @@
 @use "global" as *;
 
 .blog{
-  padding: rem(75) 0 rem(81);
   @include mq("md"){
-    padding: rem(90) 0 rem(134);
     position: relative;
   }
 }

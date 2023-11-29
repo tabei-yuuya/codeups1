@@ -1,12 +1,7 @@
 @use "global" as *;
 
 .contact{
-  margin-top: rem(80);
-  padding-bottom: rem(104);
   position: relative;
-  @include mq("md"){
-    margin-top: rem(141);
-  }
 }
 
 .contact__img1{

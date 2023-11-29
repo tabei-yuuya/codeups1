@@ -1,12 +1,7 @@
 @use "global" as *;
 
 .information{
-  padding: rem(76) 0 rem(83);
   background-color: $green2;
-  @include mq("md"){
-    margin-top: rem(140);
-    padding: rem(89) 0 rem(100);
-  }
 }
 
 .information__wrapper{

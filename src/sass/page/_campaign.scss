@@ -1,14 +1,8 @@
 @use "global" as *;
 
 .campaign{
-  margin-top:rem(39) ;
-  padding-bottom: rem(78);
   position: relative;
   overflow: hidden;
-  @include mq("md"){
-    margin-top: rem(110);
-    padding-bottom: rem(134);
-  }
 }
 
 .campaign__contents{
