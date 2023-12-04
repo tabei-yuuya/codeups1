@@ -13,6 +13,7 @@
   align-items: center;
   @include mq("md"){
     max-width:rem(1080);
+    margin-top: rem(2);
     flex-direction: initial;
     align-items: center;
 }
@@ -68,5 +69,4 @@
 .information__btn{
   text-align: center;
   margin-top: rem(39);
-  margin-left: rem(-2);
   }

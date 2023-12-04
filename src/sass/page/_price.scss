@@ -160,11 +160,9 @@
 
 .price__btn{
   margin-top: rem(44);
- display: flex;
- justify-content: center;
+ text-align: center;
  @include mq("md"){
   margin-top: rem(79);
-  margin-right: rem(4);
  }
 }
 
@@ -174,6 +172,6 @@
     aspect-ratio: 437 / 201;
     position: absolute;
     bottom: rem(59);
-    left: rem(100);
+    left: calc(50% - min(47vw, 38.78rem));
   }
 }

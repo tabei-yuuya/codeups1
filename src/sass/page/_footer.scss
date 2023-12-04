@@ -81,6 +81,17 @@
   font-family: $third-font-family;
 }
 
+// .footer__term::before{
+//   content: "";
+//   background: url(../../../dist/assets/images/hitode.png) no-repeat center center/contain;
+//   height: 1.125rem;
+//   left: 0;
+//   position: absolute;
+//   top: 0;
+//   width: 1.125rem;
+//   z-index: 100;
+// }
+
 .footer__img2{
   width: rem(18);
   aspect-ratio: 1 / 1;
@@ -138,15 +149,19 @@
   grid-area: d;
 }
 
+.footer__link{
+  display: block;
+}
+
 .footer__copyright{
   font-size: rem(12);
   line-height: 1;
   color: $white;
   margin: rem(44) rem(14) 0;
-  padding-bottom: rem(59);
+  // padding-bottom: rem(59);
   @include mq("md"){
     margin-top: rem(80);
-    padding-bottom: rem(82);
+    // padding-bottom: rem(82);
     font-size: rem(14);
     text-align: center;
   }
