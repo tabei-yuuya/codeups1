@@ -72,6 +72,25 @@ $(document).ready(function() {
 
   });
 
+  $(function () {
+    // ハンバーガーメニューボタンがクリックされたときのイベントハンドラを設定
+    $(".js-hamburger").click(function () {
+  
+      // 現在のbodyタグのoverflowスタイルを確認
+      if ($("body").css("overflow") === "hidden") {
+  
+        // もしoverflowがhiddenなら、bodyのスタイルを元に戻す
+        $("body").css({ height: "", overflow: "" });
+  
+      } else {
+  
+        // そうでなければ、bodyにheight: 100%とoverflow: hiddenを設定し、スクロールを無効にする
+        $("body").css({ height: "100%", overflow: "hidden" });
+  
+      }
+    });
+  });
+
 
 
 

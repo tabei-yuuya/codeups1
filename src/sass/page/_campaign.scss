@@ -5,6 +5,10 @@
   overflow: hidden;
 }
 
+.campaign__inner{
+  max-width: rem(600);
+}
+
 .campaign__contents{
   margin:rem(26) 0 rem(40) rem(0) ;
   @include mq("md"){
