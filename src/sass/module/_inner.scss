@@ -7,10 +7,12 @@
     padding-left: $padding-sp;
     margin-right: auto;
     margin-left: auto;
+    max-width: 630px;
     @include mq("md") {
       max-width: $inner + strip-unit($padding-pc) * 2;
       padding-right: $padding-pc;
       padding-left: $padding-pc;
+      max-width: 1130px;
     }
   }
 } @else {
