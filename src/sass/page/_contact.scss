@@ -87,11 +87,10 @@
   }
 }
 
-.contact__item{
+.contact__item iframe{
   max-width: rem(600);
   width: rem(295);
   height: rem(160);
-  background-color: $glay;
   margin: rem(16) auto 0;
   @include mq("md"){
     width: rem(273);
