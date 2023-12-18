@@ -82,7 +82,7 @@
   font-size: rem(16);
   line-height: 1.45;
   font-family: $third-font-family;
-  border-bottom: rem(1) solid $green;
+  // border-bottom: rem(1) solid $green;
   padding-bottom: rem(2);
   margin-top: rem(4);
   @include mq("md"){
@@ -91,6 +91,10 @@
     margin-top:rem(10);
     padding-bottom: rem(0);
   }
+}
+
+.voice-card__border{
+
 }
 
 .voice-card__copy{

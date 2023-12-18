@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.border{
+  background-color: $green;
+  height: rem(1);
+  width: 100%;
+}
+
+.border--campaign{
+  margin-top: rem(5);
+}
+
+.border--voice{
+  width: 49%;
+  @include mq("md"){
+    width: 59%;
+  }
+}

@@ -60,24 +60,26 @@
   }
 }
 
-.campaign-card__body::before{
-  position: absolute;
-  content: "";
-  background-color: $green;
-  border-radius: rem(5);
-  width: 100%;
-  height: rem(1);
-  top: 0;
-  left: 0;
-}
+// .campaign-card__body::before{
+//   position: absolute;
+//   content: "";
+//   background-color: $green;
+//   border-radius: rem(5);
+//   width: 100%;
+//   height: rem(1);
+//   top: 0;
+//   left: 0;
+// }
+
+
 
 .campaign-card__info{
   text-align: center;
-  margin-top: rem(10);
+  margin-top: rem(5);
   font-size: rem(14);
   line-height: 1.7143;
   @include mq("md"){
-    margin-top: rem(20);
+    margin-top: rem(15);
     margin-left: rem(-5);
     font-size: rem(16);
     line-height: 1.5;

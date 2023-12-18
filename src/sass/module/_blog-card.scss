@@ -74,7 +74,7 @@
   line-height: 1;
   font-family: $third-font-family;
   padding-bottom: rem(3);
-  border-bottom: rem(1) solid $green;
+  // border-bottom: rem(1) solid $green;
   margin-top: rem(8);
   flex-grow: 1;
   @include mq("md"){

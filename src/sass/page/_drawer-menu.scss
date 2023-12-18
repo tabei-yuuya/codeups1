@@ -1,29 +1,29 @@
 @use "global" as *;
 
-// body{
-//   height: 100%;
-//   overflow: hidden;
-// }
-
 .drawer-menu{
   background-color: $green;
-  height: 100vh;
+  height: 100%;
+  height: calc(100% - 5rem);
+  width: 100%;
+  margin-top: rem(80);
   color: $white;
   display: none;
-  position: relative;
+  position: fixed;
+  top: 0;
   z-index: 9999;
+  overflow-y: auto;
 }
 .drawer-menu.is-active{
   display: block;
 }
 
 .drawer-menu__inner{
-  padding-top: rem(25);
+  height: 100%;
 }
 
 .drawer-menu__menu{
   color: $white;
-  margin-top: rem(3);
+  padding-top: rem(40);
 }
 
 .drawer-menu__item{
