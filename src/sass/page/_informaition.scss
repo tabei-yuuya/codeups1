@@ -47,7 +47,7 @@
   font-family: $third-font-family;
   color: $black;
   padding-bottom: rem(4);
-  border-bottom: rem(1) solid $green;
+  // border-bottom: rem(1) solid $green;
   @include mq("md"){
     font-size: rem(24);
     padding-bottom: rem(8);
