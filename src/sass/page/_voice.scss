@@ -25,18 +25,6 @@
   }
 }
 
-.voice__cards{
-  display: flex;
-  flex-direction: column;
-  gap: rem(40);
-  margin-top: rem(41);
-  @include mq("md"){
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: rem(30);
-  }
-}
-
 .voice__btn{
   margin-top: rem(38);
  text-align: center;

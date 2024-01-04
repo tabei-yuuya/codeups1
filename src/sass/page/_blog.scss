@@ -22,6 +22,15 @@
   }
 }
 
+.blog__cards{
+    min-width: rem(333);
+    width: 100%;
+    @include mq("md"){
+      max-width: rem(1079);
+    }
+  }
+
+
 .blog__img{
   @include mq("md"){
     width: rem(437);

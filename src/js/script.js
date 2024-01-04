@@ -106,7 +106,7 @@ $(document).ready(function() {
     return false;
   });
 
-  const swiper1 = new Swiper(".swiper1",{
+  const swiper1 = new Swiper(".js-mv-swiper",{
     loop: true,
     effect: "fade",
     speed: 3000,

@@ -12,17 +12,23 @@
     font-size: rem(40);
   }
 }
-.section-title__main span{
+.section-title__main::first-letter{
   color: $green;
 }
 
-.section-title .section-title--blog span{
+.section-title__main--blog::first-letter{
   @include mq("md"){
     color: $white;
   }
 }
 
-.section-title .section-title--blog{
+.section-title .section-title__main--blog{
+  @include mq("md"){
+    color: $white;
+  }
+}
+
+.section-title .section-title__sub--blog{
   @include mq("md"){
     color: $white;
   }
