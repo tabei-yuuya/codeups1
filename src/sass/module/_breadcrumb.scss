@@ -1,0 +1,22 @@
+@use "global" as *;
+.breadcrumb__inner{
+  display: flex;
+  gap: rem(8);
+  align-items: center;
+}
+
+.breadcrumb__link{
+  font-size: rem(14);
+  color: $black;
+  font-family: $third-font-family;
+  text-transform:uppercase;
+}
+
+.breadcrumb__arrow{
+  border-right: rem(1) solid $black;
+  border-top: rem(1) solid $black;
+  display: inline-block;
+  height: rem(6);
+  width: rem(6);
+  transform: rotate(45deg);
+}

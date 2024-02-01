@@ -1,0 +1,15 @@
+@use "global" as *;
+.campaign-content__wrapper{
+  margin-top: rem(52);
+  @include mq("md"){
+    margin-top: rem(150);
+  }
+}
+
+.campaign-content__tab-content{
+  display: none;
+}
+.campaign-content__tab-content.is-active{
+  display: block;
+}
+
