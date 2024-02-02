@@ -1,0 +1,84 @@
+@use "global" as *;
+
+.pagination{
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination__items{
+  display: grid;
+  grid-auto-flow: column;
+  column-gap:rem(12) ;
+}
+
+.pagination__link{
+  border: 1px solid $green;
+  color: $green;
+  background-color: $white;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(38);
+  height: rem(38);
+  transition: all 0.3s;
+}
+.pagination__link.pagination__link--first{
+  color: $white;
+  background-color: $green;
+}
+
+.pagination__link:hover{
+  color: $white;
+  background-color: $green;
+}
+
+.pagination__prev,
+.pagination__next{
+  border: 1px solid $green;
+  color: $green;
+  background-color: $white;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(38);
+  height: rem(38);
+  transition: all 0.3s;
+}
+
+.pagination__arrow{
+  display: inline-block;
+  border-top: 1px solid $green;
+  border-left: 1px solid $green;
+  width: rem(8);
+  height: rem(8);
+  transform: rotate(-45deg);
+  transition: all 0.3s;
+}
+.pagination__prev::before,
+.pagination__next::before{
+  content: "";
+  border-top: 1px solid $green;
+  border-left: 1px solid $green;
+  width: rem(8);
+  height: rem(8);
+  transform: rotate(-45deg);
+  transition: all 0.3s;
+}
+
+.pagination__next::before{
+  transform: rotate(135deg);
+}
+
+.pagination__prev:hover,
+.pagination__next:hover{
+  background-color: $green;
+}
+
+.pagination__prev:hover.pagination__prev::before,
+.pagination__next:hover.pagination__next::before{
+  border-color: $white;
+}
+
+

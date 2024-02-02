@@ -60,19 +60,6 @@
   }
 }
 
-// .campaign-card__body::before{
-//   position: absolute;
-//   content: "";
-//   background-color: $green;
-//   border-radius: rem(5);
-//   width: 100%;
-//   height: rem(1);
-//   top: 0;
-//   left: 0;
-// }
-
-
-
 .campaign-card__info{
   text-align: center;
   margin-top: rem(5);
@@ -139,6 +126,40 @@
     margin-left: rem(2);
     letter-spacing: 0em;
   }
+}
+
+.campaign-card__box{
+  margin-top: rem(24);
+}
+
+.campiagn-card__text{
+  color: $black;
+  font-size: rem(16);
+  font-family: $third-font-family;
+  font-weight: $normal;
+}
+
+.campaign-card__contact{
+  color: $green;
+  margin-top: rem(32);
+  text-align: center;
+}
+
+.campaign-card__time{
+  font-size: rem(16);
+  font-family: $second-font-family;
+  font-weight: $bold;
+}
+
+.campaign-card__contact-text{
+  font-size: rem(14);
+  font-family: $third-font-family;
+  font-weight: $normal;
+}
+
+.campaign-card__btn{
+  margin-top: rem(16);
+  text-align: center;
 }
 
 
