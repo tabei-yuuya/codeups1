@@ -1,0 +1,29 @@
+@use "global" as *;
+.about-content__wrapper{
+  position: relative;
+  @include mq("md"){
+    // position: static;
+  }
+}
+
+.about__img1.about__img1--about-page{
+  margin-top: 0;
+  width: 100%;
+}
+
+.about__text.about__text--about-page{
+  position: absolute;
+  top: rem(24);
+  left: rem(24);
+  font-size: rem(40);
+  color: $white;
+  line-height: 1;
+  font-weight: $regular;
+  @include mq("md"){
+    position: static;
+    font-size: rem(80);
+    color: $white;
+    line-height: 1.25;
+  }
+}
+

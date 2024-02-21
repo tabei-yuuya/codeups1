@@ -162,6 +162,13 @@
   text-align: center;
 }
 
+// campaignページ
+.campaign-card__title--campaign-title{
+  @include mq("md"){
+    font-size: rem(24);
+  }
+}
+
 
 
 
