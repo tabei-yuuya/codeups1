@@ -185,3 +185,24 @@ $(window).on('load', function () {
 	var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
 	GethashID (hashName);//設定したタブの読み込み
 });
+
+// モーダル
+$(function () {
+  const open = $(".js-modal-open"),
+    close = $(".js-modal__close"),
+    modal = $(".js-modal");
+
+  //開くボタンをクリックしたら対応するモーダルを表示する
+  open.on("click", function () {
+    const targetModalId = $(this).data("target");
+    $(`#${targetModalId}`).addClass("is-open");
+    $('body').css('overflow-y', 'hidden');  // 本文の縦スクロールを無効
+  });
+
+  //閉じるボタンをクリックしたらモーダルを閉じる
+  close.add(modal).on("click", function () {
+    modal.removeClass("is-open");
+    $('body').css('overflow-y','auto');     // 本文の縦スクロールを有効
+  });
+});
+

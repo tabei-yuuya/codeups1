@@ -1,2 +1,44 @@
 @use "global" as *;
 
+.modal {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  display: flex;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 40px 20px;
+  transition: opacity 0.3s, visibility 0.3s;
+  opacity: 0;
+  background: rgba(0, 0, 0, 50%);
+  margin: auto;
+}
+
+.modal.is-open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__inner{
+  margin: rem(50) 0;
+}
+
+.modal__inner img{
+  aspect-ratio: 345 / 219;
+  @include mq("md"){
+    // width: rem(580);
+    aspect-ratio: 580 / 369;
+  }
+}
+
+.modal__inner.modal__inner--hight img{
+  aspect-ratio: 345 / 523;
+  @include mq("md"){
+    aspect-ratio: 492 / 746;
+    width: rem(492);
+  }
+}

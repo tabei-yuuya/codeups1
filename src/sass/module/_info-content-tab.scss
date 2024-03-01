@@ -1,5 +1,5 @@
 @use "global" as *;
-.tab{
+.info-content-tab{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: rem(21) rem(16);
@@ -8,7 +8,23 @@
   }
 }
 
-.tab__item{
+.info-content-tab__item:before{
+  content: "";
+  display: inline-block;
+  height: 4rem;
+  margin-right: 0.5rem;
+  mask-image: url(/dist/assets/images/info-tab1.svg);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    width: 4rem;
+}
+
+.info-content-tab.active::before {
+  background-color: #fff;
+}
+
+.info-content-tab__item{
   background-color: $white;
   font-family: $third-font-family;
   font-weight: $normal;
@@ -22,7 +38,7 @@
   cursor: pointer;
 }
 
-.tab__item.active{
+.info-content-tab__item.active{
   color: $white;
   background-color: $green;
 }
