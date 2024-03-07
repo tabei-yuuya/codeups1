@@ -163,9 +163,28 @@
 }
 
 // campaignページ
-.card__title--campaign-title{
+.card .card__title--campaign__title{
   @include mq("md"){
     font-size: rem(24);
+  }
+}
+
+.card .card--campaign__img{
+  aspect-ratio: 280 / 188;
+  @include mq("md"){
+    aspect-ratio: 520 / 347;
+  }
+}
+
+// informationページ
+.card .card__title--info__title{
+  font-size: rem(24);
+}
+
+.card .card--info__img{
+  aspect-ratio:297 / 189 ;
+  @include mq("md"){
+    aspect-ratio: 492 / 313;
   }
 }
 

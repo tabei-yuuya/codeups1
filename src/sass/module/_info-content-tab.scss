@@ -1,27 +1,12 @@
 @use "global" as *;
 .info-content-tab{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: rem(21) rem(16);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: rem(21) rem(19);
   @include mq("md"){
-    grid-template-columns: repeat(4, rem(162));
+    gap: rem(21) rem(90);
   }
-}
-
-.info-content-tab__item:before{
-  content: "";
-  display: inline-block;
-  height: 4rem;
-  margin-right: 0.5rem;
-  mask-image: url(/dist/assets/images/info-tab1.svg);
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    width: 4rem;
-}
-
-.info-content-tab.active::before {
-  background-color: #fff;
 }
 
 .info-content-tab__item{
@@ -31,14 +16,65 @@
   color: $green;
   border:1px solid $green;
   font-size: rem(14);
-  text-align: center;
-  padding: rem(6) rem(20);
+  padding: rem(10) rem(15);
   text-transform:uppercase;
   transition: color 0.3s, background-color 0.3s;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  @include mq("md"){
+    font-size: rem(24);
+    padding: rem(18) rem(0);
+  }
+}
+
+.info-content-tab__item::before{
+  @include mq("md"){
+    content: "";
+    display: inline-block;
+    width: rem(64);
+    height: rem(64);
+    mask-image: url(../images/info-tab1.svg);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $green;
+    margin-right: rem(8)
+    }
+}
+
+.info-content-tab__item:nth-child(2)::before{
+  @include mq("md"){
+    mask-image: url(../images/info-tab2.svg);
+    }
+}
+
+.info-content-tab__item:nth-child(3)::before{
+  @include mq("md"){
+    mask-image: url(../images/info-tab3.svg);
+    }
+}
+
+.info-content-tab__item:hover{
+  color: $white;
+  background-color: $green;
+  transition: 0.5s ease-out;
+  opacity: 1;
+}
+
+.info-content-tab__item:hover::before{
+  transition: 0.5s ease-out;
+  background-color: $white;
 }
 
 .info-content-tab__item.active{
   color: $white;
   background-color: $green;
 }
+
+.info-content-tab__item.active::before {
+  background-color: $white;
+}
+

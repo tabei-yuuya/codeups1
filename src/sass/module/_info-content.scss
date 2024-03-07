@@ -1,30 +1,42 @@
 @use "global" as *;
-.campaign-content{
+.info-content{
   position: relative;
 }
 
-.campaign-content__tab-content{
+.info-content__tab{
+  position: relative;
+    z-index: 10;
+}
+
+
+.info-content__tab-content{
   display: none;
 }
-.campaign-content__tab-content.active{
+.info-content__tab-content.active{
   display: block;
 }
 
-.campaign-content__pagination{
-  margin: rem(80) auto 0;
-  max-width: rem(444);
+.info-content__card{
+margin-top: rem(16);
+  @include mq("md"){
+    margin-top: rem(24);
+  }
 }
 
-.campaign-content__img{
+.info-content__img{
   width: rem(135);
   aspect-ratio: 310 / 138;
   position: absolute;
-  top: rem(-27);
+  top: rem(-100);
   left: calc(50% - min(47vw, 38.78rem));
   @include mq("md"){
     width: rem(301);
     aspect-ratio: 310 / 138;
     top: rem(-70);
     }
-
 }
+
+
+
+
+

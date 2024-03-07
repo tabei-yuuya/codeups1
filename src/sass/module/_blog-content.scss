@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.blog-content__cards{
+  min-width: rem(333);
+    width: 100%;
+    @include mq("md"){
+      max-width: rem(1079);
+    }
+}
