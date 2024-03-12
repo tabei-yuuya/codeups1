@@ -1,5 +1,17 @@
 @use "global" as *;
 
+.blog-content__wrapper{
+  @include mq("md"){
+    display: flex;
+  }
+}
+
+.blog-content__box{
+  @include mq("md"){
+    width:65% ;
+  }
+}
+
 .blog-content__cards{
   min-width: rem(333);
     width: 100%;
@@ -10,4 +22,14 @@
 
 .blog-content__pagination{
   margin-top: rem(80);
+  max-width: rem(444);
+  margin: 0 auto;
+}
+
+.blog-content__side-menu{
+  margin-top: rem(80);
+  @include mq("md"){
+    width: 27%;
+    margin-left: rem(80);
+  }
 }

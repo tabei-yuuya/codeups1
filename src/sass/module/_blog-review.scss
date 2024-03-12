@@ -1,10 +1,13 @@
 @use "global" as *;
-.blog-popular__title{
+
+
+.blog-review__title{
   color: $black;
   font-size: rem(24);
   font-weight: $normal;
   font-family:$third-font-family;
   display: inline-flex;
+  // justify-content: center;
   align-items: center;
   width: 100%;
   border-left: rem(8) solid $green;
@@ -12,7 +15,7 @@
   padding-left: rem(16);
 }
 
-.blog-popular__title::before{
+.blog-review__title::before{
   content: "";
   display: inline-block;
   width: rem(50);
@@ -24,33 +27,33 @@
   margin-right: rem(8);
 }
 
-.blog-popular__card{
-  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
+.blog-review__card{
   margin-top: rem(24);
 }
 
-.blog-popular__link{
-  display: flex;
-  padding: rem(16);
-}
-
-.blog-popular__img img{
-  width: rem(121);
-  aspect-ratio: 121 / 90;
-  height: 100%;
+.blog-review__img img{
+  width: rem(294);
+  aspect-ratio: 294 / 218;
   object-fit: cover;
-  margin-right: rem(16);
 }
 
-.blog-popular__date{
-  font-size:rem(12);
-  font-family: $base-font-family;
+.blog-review__label{
+  font-size: rem(12);
+  font-family: $third-font-family;
   font-weight: $regular;
   color: $black;
+  margin-top:rem(16);
 }
-.blog-popular__text{
-  font-size: rem(16);
+
+.blog-review__text{
+  font-size: rem(24);
   font-family: $third-font-family;
-  font-weight: $normal;
+  font-weight: $bold;
   color: $black;
+  margin-top:rem(8);
+}
+
+.blog-review__btn{
+  margin-top: rem(36);
+  text-align: center;
 }

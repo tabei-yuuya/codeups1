@@ -1,0 +1,32 @@
+@use "global" as *;
+.blog-accordion__title, .blog-accordion__text{
+  color: $green;
+  font-size: rem(24);
+  font-family: $third-font-family;
+  font-weight: $normal;
+}
+
+.blog-accordion__title::before{
+  content: "";
+  display: inline-block;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  background-color: $green;
+  width: rem(24);
+  height: rem(20);
+  margin-right: rem(8);
+}
+
+.blog-accordion__text{
+  margin-left:rem(24) ;
+}
+
+.blog-accordion__text::before{
+  content: "";
+  display: inline-block;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  background-color: $green;
+  width: rem(20);
+  height: rem(20);
+  margin-right: rem(8);
+}
+

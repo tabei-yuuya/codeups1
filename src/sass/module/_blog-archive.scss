@@ -1,0 +1,29 @@
+@use "global" as *;
+.blog-archive__title{
+  color: $black;
+  font-size: rem(24);
+  font-weight: $normal;
+  font-family:$third-font-family;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  border-left: rem(8) solid $green;
+  box-sizing: border-box;
+  padding-left: rem(16);
+}
+
+.blog-archive__title::before{
+  content: "";
+  display: inline-block;
+  width: rem(50);
+  height: rem(50);
+  background-image: url(../images/blog-popular-img.svg);
+  background-size: contain;
+  background-position:  center;
+  background-repeat: no-repeat;
+  margin-right: rem(8);
+}
+
+.blog-archive__accordion{
+  margin-top: rem(24);
+}

@@ -39,6 +39,8 @@
   aspect-ratio: 301 / 201 ;
   vertical-align: bottom;
   object-fit: cover;
+  overflow: hidden;
+
 }
 
 .blog-card__body{
@@ -78,4 +80,19 @@
   @include mq("md"){
     margin-top:rem(16);
   }
+}
+
+// ブログページ
+.blog-card__link.blog-card__link--blog-content{
+  max-width: 500px;
+  width: 100%;
+}
+.blog-card__link.blog-card__link--blog-content img{
+  transition: transform .6s ease;
+}
+.blog-card__link.blog-card__link--blog-content:hover img{
+  transform:scale(1.1);
+}
+.blog-card__img.blog-card__img--blog-content{
+  overflow: hidden;
 }
