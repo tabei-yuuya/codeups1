@@ -33,3 +33,11 @@
     margin-left: rem(80);
   }
 }
+
+// ブログ詳細ページ
+.blog-content__detail{
+  margin-top: rem(52);
+  @include mq("md"){
+    margin-top: rem(152);
+  }
+}

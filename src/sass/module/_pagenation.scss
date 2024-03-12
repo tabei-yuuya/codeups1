@@ -81,4 +81,10 @@
   border-color: $white;
 }
 
+// ブログ詳細ページ
+.pagination.pagination--blog-detail{
+  max-width: rem(158);
+  margin: rem(40) auto 0;
+}
+
 
