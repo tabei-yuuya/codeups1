@@ -1,4 +1,7 @@
 @use "global" as *;
+.voice-card{
+  box-shadow: rem(2) rem(2) rem(10) rgba(0, 0, 0, 0.25);
+}
 
 .voice-card__item{
   padding: rem(24) rem(16) rem(23);
@@ -14,7 +17,7 @@
 }
 
 .voice-card__img{
-  width: rem(151);
+  // width: rem(151);
   aspect-ratio: 151 / 117;
   margin-left: rem(15);
   @include mq("md"){
@@ -32,8 +35,10 @@
 }
 
 .voice-card__inner{
+  margin-top: auto;
   @include mq("md"){
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
   }
@@ -71,7 +76,7 @@
   font-size: rem(16);
   line-height: 1.45;
   font-family: $third-font-family;
-  // border-bottom: rem(1) solid $green;
+  border-bottom: rem(1) solid $green;
   padding-bottom: rem(2);
   margin-top: rem(4);
   @include mq("md"){

@@ -1,0 +1,26 @@
+@use "global" as *;
+.voice-content__tab{
+  margin-top: rem(52);
+  @include mq("md"){
+    margin-top: rem(150);
+  }
+}
+
+.voice-content__tab-content{
+  display: none;
+}
+.voice-content__tab-content.active{
+  display: block;
+}
+
+.voice-content__cards{
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: rem(40);
+  margin-top: rem(40);
+  @include mq("md"){
+  // grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(80) rem(40);
+  }
+}

@@ -13,8 +13,10 @@
   }
 }
 
+// ブログページ
 .blog-cards.blog-cards--blog-content{
   @include mq("md"){
     grid-template-columns:  repeat(2, 1fr);
+    margin-top: rem(166);
   }
 }

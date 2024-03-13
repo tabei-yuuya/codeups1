@@ -1,5 +1,5 @@
 @use "global" as *;
-.campaign-content-tab{
+.tab{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: rem(21) rem(16);
@@ -10,7 +10,7 @@
   }
 }
 
-.campaign-content-tab__item{
+.tab__item{
   background-color: $white;
   font-family: $third-font-family;
   font-weight: $normal;
@@ -24,7 +24,7 @@
   cursor: pointer;
 }
 
-.campaign-content-tab__item.active{
+.tab__item.active{
   color: $white;
   background-color: $green;
 }
