@@ -1,4 +1,9 @@
 @use "global" as *;
+
+.voice-content{
+  position: relative;
+}
+
 .voice-content__tab{
   margin-top: rem(52);
   @include mq("md"){
@@ -23,4 +28,17 @@
   grid-template-columns: repeat(2, 1fr);
   gap: rem(80) rem(40);
   }
+}
+
+.voice-content__img{
+  width: rem(135);
+  aspect-ratio: 310 / 138;
+  position: absolute;
+  top: rem(-27);
+  left: calc(50% - min(47vw, 38.78rem));
+  @include mq("md"){
+    width: rem(301);
+    aspect-ratio: 310 / 138;
+    top: rem(-70);
+    }
 }

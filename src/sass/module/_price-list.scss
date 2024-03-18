@@ -1,0 +1,99 @@
+@use "global" as *;
+.price-list{
+  border-collapse: collapse ;
+  width: 100%;
+  border: rem(1) solid $green;
+}
+
+.price-list:not(:first-child){
+  margin-top: rem(40);
+  @include mq("md"){
+    margin-top: rem(80);
+  }
+}
+
+.price-list__row{
+  display: flex;
+  flex-wrap: wrap;
+  @include mq("md"){
+    display: table-row;
+  }
+}
+
+.price-list__head{
+  width: 100%;
+  background-color: $green;
+  color: $white;
+  line-height: 1.5;
+  color: $white;
+  font-size: rem(16);
+  font-family: $third-font-family;
+  font-weight: $bold;
+  padding: rem(8) 0;
+  @include mq("md"){
+    padding: rem(41) rem(40) rem(113);
+    width: 28%;
+  }
+}
+
+.price-list__head span{
+  position: relative;
+}
+
+.price-list__head span::before{
+  content: "";
+  mask-image: url(../images/info-tab1.svg);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $white;
+    display: block;
+    width: rem(24);
+    height: rem(24);
+    position: absolute;
+    left: rem(-32);
+    @include mq("md"){
+      width: rem(61);
+      height: rem(64);
+      left: rem(30);
+      top: rem(33);
+    }
+}
+
+.price-list__course{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  color: $black;
+  font-size: rem(16);
+  font-family: $third-font-family;
+  font-weight: $regular;
+  padding: rem(7) rem(0);
+  width: 69%;
+  border-top:rem(1) solid $green;
+  @include mq("md"){
+    width: 48%;
+    display: table-cell;
+  }
+}
+
+.price-list__value{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  color: $black;
+  font-size: rem(16);
+  font-family: $third-font-family;
+  font-weight: $regular;
+  padding: rem(19) 0 rem(19) rem(20);
+  width: 31%;
+  border-top:rem(1) solid $green;
+  border-left:rem(1) solid $green;
+  @include mq("md"){
+    width: 23%;
+    display: table-cell;
+  }
+}
