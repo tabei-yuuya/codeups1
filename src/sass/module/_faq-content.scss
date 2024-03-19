@@ -1,17 +1,9 @@
 @use "global" as *;
-.price-content{
+.faq-content{
   position: relative;
 }
 
-.price-content__wrapper{
-  @include mq("md"){
-    max-width: rem(700);
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
-.price-content__img{
+.faq-content__img{
   width: rem(135);
   aspect-ratio: 310 / 138;
   position: absolute;
@@ -23,4 +15,3 @@
     top: rem(-70);
     }
 }
-

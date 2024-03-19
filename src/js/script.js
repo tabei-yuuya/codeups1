@@ -190,21 +190,23 @@ $(function () {
   });
 });
 
+// faqアコーディオン
 $(function () {
-  $(".js-accordion__item  .js-accordion__content").css(
+  $(".js-faq-accordion__item  .js-faq-accordion__content").css(
     "display",
     "block"
   );
-  $(".js-accordion__item:nth-of-type(2)  .js-accordion__content").css(
-    "display",
-    "none "
-  );
-  $(".js-accordion__item .js-accordion__title").addClass(
+  // $(".js-faq-accordion__item:nth-of-type(2)  .js-faq-accordion__content").css(
+  //   "display",
+  //   "none "
+  // );
+  $(".js-faq-accordion__item .js-faq-accordion__title").addClass(
     "is-open"
   );
-  $(".js-accordion__title").on("click", function () {
+  $(".js-faq-accordion__title").on("click", function () {
     $(this).toggleClass("is-open");
     $(this).next().slideToggle(300);
   });
 });
+
 

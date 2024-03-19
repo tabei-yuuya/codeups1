@@ -1,0 +1,38 @@
+@use "global" as *;
+.contact-form__wrap{
+  padding-bottom: rem(24);
+  border-bottom: rem(1) dashed $green;
+}
+
+.contact-form__wrap:not(:first-child){
+  margin-top: rem(24);
+  @include mq("md"){
+    margin-top: rem(40);
+  }
+}
+
+.contact-form__label{
+  font-size: rem(16);
+  font-family: $third-font-family;
+  font-weight: $bold;
+}
+
+.contact-form__label span{
+  font-size: rem(12);
+  font-weight: $regular;
+  background-color: $red;
+  padding: rem(2) rem(16);
+  color: $white;
+  margin-left: rem(8);
+}
+
+.contact-form__input{
+  margin-top: rem(16);
+  border: rem(1) solid $green;
+}
+
+.contact-form__input input::placeholder{
+  color: $green2;
+}
+
+

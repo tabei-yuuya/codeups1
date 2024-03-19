@@ -1,0 +1,70 @@
+@use "global" as *;
+.faq-accordion {
+  max-width:rem(700) ;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.faq-accordion__item:not(:first-child){
+  margin-top: rem(40);
+}
+
+.faq-accordion__title {
+  position: relative;
+  font-size: rem(16);
+  font-family: $third-font-family;
+  font-weight: $regular;
+  padding: rem(16);
+  cursor: pointer;
+  color: $white;
+  background-color: $green;
+}
+
+.faq-accordion__title::after {
+  position: absolute;
+  top: 50%;
+  right: rem(25);
+  display: block;
+  width: rem(28);
+  height: rem(1);
+  background-color: $white;
+  content: "";
+}
+
+.faq-accordion__title::before {
+  position: absolute;
+  top: 50%;
+  right: rem(25);
+  display: block;
+  width: rem(28);
+  height: rem(1);
+  background-color: $white;
+  content: "";
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+
+
+
+.faq-accordion__title.is-open::before {
+  transform: rotate(0deg);
+}
+
+.faq-accordion__content {
+  display: none;
+  padding: rem(24) rem(16);
+  border: rem(1) solid $green;
+  @include mq("md"){
+    margin-top: rem(16);
+    padding: rem(40);
+  }
+}
+
+.faq-accordion__text {
+  font-size: rem(16);
+  font-family: $third-font-family;
+  font-weight: $regular;
+  color: $black;
+}
