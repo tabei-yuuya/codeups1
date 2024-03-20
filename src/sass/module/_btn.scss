@@ -14,9 +14,6 @@
   position: relative;
   border: 1px solid $green;
   z-index: 100;
-  @include mq("md"){
-
-  }
 }
 
 .btn__text {

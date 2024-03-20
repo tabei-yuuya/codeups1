@@ -246,7 +246,7 @@
     </div>
     <div class="contact-content contact-content-layout">
       <div class="contact-content__inner inner">
-        <div class="contact-content__form contct-form">
+        <form class="contact-content__form contact-form">
           <dl class="contact-form__wrap">
             <dt class="contact-form__label">
               <label for="name">お名前<span>必須</span></label>
@@ -277,15 +277,15 @@
             </dt>
             <dd class="contact-form__check">
               <label>
-                <input type="checkbox" checked>
+                <input class="contact-form__checkbox" type="checkbox" checked>
                 <span>ダイビング講習について</span>
               </label>
               <label>
-                <input type="checkbox">
+                <input class="contact-form__checkbox" type="checkbox">
                 <span>ファンダイビングについて</span>
               </label>
               <label>
-                <input type="checkbox">
+                <input class="contact-form__checkbox" type="checkbox">
                 <span>体験ダイビングについて</span>
               </label>
             </dd>
@@ -296,7 +296,7 @@
             </dt>
             <dd class="contact-form__select">
               <select id="address">
-                <option hidden>キャンペーン内容を選択</option>
+                <option value="hidden">キャンペーン内容を選択</option>
                 <option value="ライセンス取得">ライセンス取得</option>
                 <option value="貸切体験ダイビング">貸切体験ダイビング</option>
                 <option value="ナイトダイビング">ナイトダイビング</option>
@@ -312,16 +312,16 @@
               <textarea name="message" id="message" required="required"></textarea>
             </dd>
           </dl>
-          <div class="contact-form__check">
+          <div class="contact-form__send">
             <label>
               <input type="checkbox">
               <span>個人情報の取り扱いについて同意のうえ送信します。</span>
             </label>
           </div>
-          <div class="contact-form__submit">
-            <input type="submit" value="send">
-          </div>
+          <div class="contact-form__submit form-submit">
+            <input type="submit" value="send" />
         </div>
+        </form>
       </div>
     </div>
     <!-- faq-page -->
