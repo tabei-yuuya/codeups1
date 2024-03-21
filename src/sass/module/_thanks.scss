@@ -1,0 +1,32 @@
+@use "global" as *;
+.thanks-content{
+  position: relative;
+}
+.thanks-content__wrapper{
+  text-align: center;
+}
+
+.thanks-content__text{
+  font-size: rem(16);
+  font-family: $third-font-family;
+  font-weight: $regular;
+  color: $black;
+  line-height: 1.125;
+}
+
+.thanks-content__text + .thanks-content__text{
+  margin-top: rem(40);
+}
+
+.thanks-content__img{
+  width: rem(135);
+  aspect-ratio: 310 / 138;
+  position: absolute;
+  top: rem(-27);
+  left: calc(50% - min(47vw, 38.78rem));
+  @include mq("md"){
+    width: rem(301);
+    aspect-ratio: 310 / 138;
+    top: rem(-70);
+    }
+}
