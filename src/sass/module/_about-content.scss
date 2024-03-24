@@ -1,4 +1,7 @@
 @use "global" as *;
+.about-content{
+  position: relative;
+}
 .about-content__wrapper{
   position: relative;
   @include mq("md"){
@@ -6,6 +9,20 @@
   }
 }
 
+.about-content__img{
+  width: rem(135);
+  aspect-ratio: 310 / 138;
+  position: absolute;
+  top: rem(-28);
+  left: calc(50% - min(47vw, 38.78rem));
+  @include mq("md"){
+    width: rem(301);
+    aspect-ratio: 310 / 138;
+    top: rem(-70);
+    }
+}
+
+// aboutページ
 .about__img1.about__img1--about-page{
   margin-top: 0;
   width: 100%;

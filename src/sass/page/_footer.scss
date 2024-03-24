@@ -3,6 +3,10 @@
 .footer{
   height: 100%;
   background-color: $green;
+  padding: rem(49) 0 rem(59);
+  @include mq("md"){
+    padding: rem(80) 0 rem(82);
+  }
 }
 
 .footer__inner{
@@ -164,5 +168,12 @@
     // padding-bottom: rem(82);
     font-size: rem(14);
     text-align: center;
+  }
+}
+
+// 404ページ
+.footer.footer--notfound{
+  @include mq("md"){
+    padding-top: rem(200);
   }
 }

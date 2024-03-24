@@ -45,12 +45,6 @@
   }
 
 }
-.l-contact{
-  margin-top: rem(80);
-  @include mq("md"){
-    margin-top: rem(141);
-  }
-}
 .l-footer{
   margin-top: rem(104);
   padding: rem(49) 0 rem(59);

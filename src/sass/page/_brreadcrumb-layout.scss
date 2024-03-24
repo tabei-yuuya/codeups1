@@ -1,4 +1,11 @@
 @use "global" as *;
 .breadcrumb-layout{
-  margin-top: rem(8);
+  margin-top: rem(10);
+}
+
+.breadcrumb-layout.breadcrumb-layout--revers{
+  margin-top: rem(88);
+  @include mq("md"){
+    margin-top: rem(106);
+  }
 }

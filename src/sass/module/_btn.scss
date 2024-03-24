@@ -83,3 +83,39 @@
   height: 100%;
   z-index: -10;
 }
+
+// 404ページ
+.btn.btn--revers{
+  color: $green;
+  background-color: $white;
+  border: 1px solid $white;
+}
+
+.btn.btn--revers:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+
+.btn.btn--revers:hover {
+  color: $white;
+}
+
+.btn.btn--revers::before {
+  background-color:$green;
+  
+}
+
+.btn__arrow.btn__arrow--revers{
+  border-bottom: 1px solid $green;
+  border-right: 1px solid $green;
+}
+
+.btn.btn--revers:hover .btn__arrow {
+  border-bottom: 1px solid $white;
+  border-right: 1px solid $white;
+}
+
+.btn.btn--revers::after{
+  border: 1px solid $white;
+
+}

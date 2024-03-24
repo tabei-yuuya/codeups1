@@ -98,13 +98,14 @@ $(document).ready(function() {
 
   $(document).on('click', 'a[href*="#"]', function () {
     let time = 400;
-    let header = $('header').innerHeight();
+    let header = $('header').innerHeight(); // ヘッダーの高さを取得
     let target = $(this.hash);
     if (!target.length) return;
-    let targetY = target.offset().top - header;
+    let targetY = target.offset().top - header; // ヘッダーの高さを考慮してスクロール位置を計算
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
-  });
+});
+
 
   const swiper1 = new Swiper(".js-mv-swiper",{
     loop: true,
@@ -150,12 +151,12 @@ $(document).ready(function() {
 
 // tab
 // 上記の動きをページが読み込まれたらすぐに動かす
-$(window).on('load', function () {
-  $('.js-tab-item:first-of-type').addClass("active"); //最初のliにactiveクラスを追加
-  $('.js-content-area:first-of-type').addClass("active"); //最初の.areaにis-activeクラスを追加
-var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
-GethashID (hashName);//設定したタブの読み込み
-});
+// $(window).on('load', function () {
+//   $('.js-tab-item:first-of-type').addClass("active"); //最初のliにactiveクラスを追加
+//   $('.js-content-area:first-of-type').addClass("active"); //最初の.areaにis-activeクラスを追加
+// var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
+// GethashID (hashName);//設定したタブの読み込み
+// });
 
 $(function () {
   const tabButton = $(".js-tab-item"),
@@ -168,6 +169,28 @@ $(function () {
     tabContent.removeClass("active");
     tabContent.eq(index).addClass("active");
   });
+
+
+//別ページからタブメニューへダイレクトリンク
+//タブへダイレクトリンクの実装
+    //リンクからハッシュを取得
+    var hash = location.hash;
+    hash = (hash.match(/^#tab__menu-\d+$/) || [])[0];
+    //リンクにハッシュが入っていればtabnameに格納
+    if ($(hash).length) {
+        var tabname = hash.slice(1);
+    } else {
+        var tabname = "tab__menu-1";
+    }
+    //コンテンツ非表示・タブを非アクティブ
+    $(".js-tab-item").removeClass("active");
+    $(".js-content-area").removeClass("active");
+    //何番目のタブかを格納
+    var tabno = $(".js-tab-direct .js-content-area#" + tabname).index();
+    //コンテンツ表示
+    $(".js-content-area").eq(tabno).addClass("active");
+    //タブのアクティブ化
+    $(".js-tab-item").eq(tabno).addClass("active");
 });
 
 // モーダル

@@ -112,3 +112,17 @@
     bottom: rem(-90);
   }
 }
+
+// aboutページ
+.about__box.about__box--about-page{
+  @include mq("md"){
+    top:30.5%;
+    right: calc(50% - min(50vw, 31.5rem));
+  }
+  }
+
+  .about__box2.about__box2--about-page{
+    @include mq("md"){
+      margin-top: rem(22);
+    }
+  }

@@ -22,7 +22,7 @@
 .contact__container{
   @include mq("md"){
     display: flex;
-    padding:rem(80) rem(50) ;
+    padding:rem(80) rem(50) rem(72);
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.4);
   }
 }
@@ -36,7 +36,7 @@
 }
 
 .contact__content + .contact__content{
-  margin-top: rem(40);
+  margin-top: rem(32);
   @include mq("md"){
     border-left: rem(1) solid $green;
     padding-top: rem(19.5);
