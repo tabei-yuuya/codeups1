@@ -16,18 +16,18 @@
   display: block;
 }
 
-.info-content__card{
-margin-top: rem(16);
+.info-content__area{
+  margin-top: rem(15);
   @include mq("md"){
     margin-top: rem(24);
   }
 }
 
 .info-content__img{
-  width: rem(135);
-  aspect-ratio: 310 / 138;
+  width: rem(130);
+  aspect-ratio: 310 / 130;
   position: absolute;
-  top: rem(-100);
+  top: rem(-97);
   left: calc(50% - min(47vw, 38.78rem));
   @include mq("md"){
     width: rem(301);

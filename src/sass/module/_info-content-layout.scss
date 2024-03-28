@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .info-content-layout{
-  margin-top: rem(121);
+  margin-top: rem(119);
   @include mq("md"){
     margin-top: rem(150);
   }

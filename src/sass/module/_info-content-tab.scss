@@ -10,28 +10,33 @@
 }
 
 .info-content-tab__item{
-  background-color: $white;
+  background-color: $green2;
   font-family: $third-font-family;
   font-weight: $normal;
   color: $green;
-  border:1px solid $green;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
   font-size: rem(14);
-  padding: rem(10) rem(15);
+  padding: rem(10) rem(15) rem(9);
   text-transform:uppercase;
   transition: color 0.3s, background-color 0.3s;
   cursor: pointer;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   @include mq("md"){
     font-size: rem(24);
-    padding: rem(18) rem(0);
+    padding: rem(26) 0 rem(26) rem(60);
+    box-shadow: none;
   }
 }
 
 .info-content-tab__item::before{
   @include mq("md"){
+    position: absolute;
+    left: 10%;
+    top: 17%;
     content: "";
     display: inline-block;
     width: rem(64);
@@ -47,6 +52,8 @@
 
 .info-content-tab__item:nth-child(2)::before{
   @include mq("md"){
+    left: 6%;
+    top: 15%;
     mask-image: url(../images/info-tab2.svg);
     }
 }
@@ -72,6 +79,9 @@
 .info-content-tab__item.active{
   color: $white;
   background-color: $green;
+  @include mq("md"){
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  }
 }
 
 .info-content-tab__item.active::before {
