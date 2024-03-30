@@ -29,9 +29,9 @@
   font-size: rem(16);
   font-family: $third-font-family;
   font-weight: $bold;
-  padding: rem(8) 0;
+  padding: rem(7) 0;
   @include mq("md"){
-    padding: rem(41) rem(40) rem(113);
+    padding: rem(41) rem(40) rem(0);
     width: 28%;
   }
 }
@@ -74,8 +74,10 @@
   width: 69%;
   border-top:rem(1) solid $green;
   @include mq("md"){
+    text-align: left;
     width: 48%;
     display: table-cell;
+    padding: rem(4) rem(18) 0;
   }
 }
 
@@ -93,7 +95,11 @@
   border-top:rem(1) solid $green;
   border-left:rem(1) solid $green;
   @include mq("md"){
+    font-size: rem(14);
     width: 23%;
     display: table-cell;
+    text-align: right;
+  padding: rem(4) rem(14) rem(0) rem(20);
+
   }
 }

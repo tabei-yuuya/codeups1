@@ -44,9 +44,11 @@
 }
 
 .blog-card__body{
-  margin-top: rem(27);
-  padding: rem(0) rem(16) rem(24);
+  padding: rem(27) rem(16) rem(24);
   flex-grow: 1;
+  @include mq("md"){
+    padding-top: rem(20);
+  }
 }
 
 .blog-card__date{
@@ -67,6 +69,7 @@
   flex-grow: 1;
   @include mq("md"){
     padding-bottom: rem(7);
+    margin-top: rem(3);
   }
 }
 

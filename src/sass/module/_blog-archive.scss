@@ -26,4 +26,7 @@
 
 .blog-archive__accordion{
   margin-top: rem(22);
+  @include mq("md"){
+    margin-top: rem(25);
+  }
 }

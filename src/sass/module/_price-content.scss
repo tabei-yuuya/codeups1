@@ -11,6 +11,13 @@
   }
 }
 
+.price-content__list{
+  @include mq("md"){
+    height: rem(178);
+  }
+}
+
+
 .price-content__img{
   width: rem(135);
   aspect-ratio: 310 / 138;

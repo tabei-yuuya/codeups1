@@ -4,9 +4,9 @@
 }
 
 .voice-card__item{
-  padding: rem(24) rem(16) rem(23);
+  padding: rem(19) rem(16) rem(23);
   @include mq("md"){
-    padding: rem(24);
+    padding: rem(22) rem(24) rem(24);
   }
 }
 
@@ -16,12 +16,14 @@
 }
 
 .voice-card__img{
-  // width: rem(151);
+  width: rem(151);
   aspect-ratio: 151 / 117;
+  margin-top: rem(4);
   margin-left: rem(15);
   @include mq("md"){
     width: rem(180);
   aspect-ratio: 180 / 140;
+  margin-top: rem(3);
   }
 }
 

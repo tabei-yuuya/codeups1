@@ -85,6 +85,9 @@
 .pagination.pagination--blog-detail{
   max-width: rem(158);
   margin: rem(40) auto 0;
+  @include mq("md"){
+    margin: rem(80) auto 0;
+  }
 }
 
 

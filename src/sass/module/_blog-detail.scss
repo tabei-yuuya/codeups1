@@ -12,12 +12,25 @@
   font-weight: $medium;
   color: $black;
   border-bottom: rem(1) solid $green;
+  margin-top: rem(6);
+  @include mq("md"){
+    font-size: rem(33);
+  }
 }
 .blog-detail__img{
   width: 100%;
   aspect-ratio: 345 / 231;
   object-fit: cover;
   margin-top: rem(24);
+  @include mq("md"){
+    margin-top: rem(35);
+  }
+}
+
+.blog-detail__img:nth-of-type(2){
+  @include mq("md"){
+    margin-top: rem(40);
+  }
 }
 
 .blog-detail__text{
@@ -27,10 +40,16 @@
   color: $black;
   line-height: 1.5;
   margin-top: rem(24);
+  @include mq("md"){
+    margin-top: rem(40);
+  }
 }
 
 .blog-detail__lists{
   margin-top: rem(24);
+  @include mq("md"){
+    margin-top: rem(39);
+  }
 }
 
 .blog-detail__list{

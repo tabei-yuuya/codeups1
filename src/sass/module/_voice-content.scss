@@ -4,13 +4,6 @@
   position: relative;
 }
 
-.voice-content__tab{
-  margin-top: rem(52);
-  @include mq("md"){
-    margin-top: rem(150);
-  }
-}
-
 .voice-content__tab-content{
   display: none;
 }

@@ -8,10 +8,16 @@
 
 .blog-side-menu__review{
   margin-top: rem(80);
+  @include mq("md"){
+    margin-top: rem(81);
+  }
 }
 
 .blog-side-menu__campaign{
   margin-top: rem(84);
+  @include mq("md"){
+    margin-top: rem(88);
+  }
 }
 
 .blog-side-menu__archive{
