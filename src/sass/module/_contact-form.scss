@@ -11,9 +11,9 @@
 }
 
 .contact-form__wrap:not(:first-child){
-  margin-top: rem(24);
+  margin-top: rem(22);
   @include mq("md"){
-    margin-top: rem(40);
+    margin-top: rem(39);
   }
 }
 
@@ -31,13 +31,13 @@
   font-size: rem(12);
   font-weight: $regular;
   background-color: $red;
-  padding: rem(2) rem(16);
+  padding: rem(5) rem(18);
   color: $white;
   margin-left: rem(8);
 }
 
 .contact-form__input{
-  margin-top: rem(16);
+  margin-top: rem(15);
   border: rem(1) solid $green;
   @include mq("md"){
     margin-top: 0;
@@ -47,7 +47,10 @@
 
 .contact-form__input input{
   width: 100%;
-  padding: rem(8) 0 rem(8) rem(16);
+  padding: rem(8) 0 rem(7) rem(16);
+  @include mq("md"){
+    padding: rem(8) 0 rem(6) rem(16);
+  }
 }
 
 .contact-form__input input::placeholder{
@@ -57,9 +60,9 @@
 .contact-form__check{
   display: flex;
   flex-direction: column;
-  margin: rem(16) 0 0 rem(22);
+  margin: rem(17) 0 0 rem(19);
   @include mq("md"){
-    margin-top: 0;
+    margin-top: rem(5);
   }
 }
 
@@ -100,7 +103,7 @@
 }
 
 .contact-form__select{
-  margin-top: rem(16);
+  margin-top: rem(14);
   border: rem(1) solid $green;
   font-size: rem(12);
   font-family: $third-font-family;
@@ -117,10 +120,10 @@
   position: absolute;
   content: "";
   clip-path: polygon(0 0, 100% 0, 50% 100%);
-  width: rem(12);
+  width: rem(9);
   height: rem(10);
   background-color: $green;
-  top: 40%;
+  top: 27%;
   right: rem(8);
   display: inline-block;
   z-index: -1;
@@ -128,7 +131,7 @@
 
 .contact-form__select select{
   width: 100%;
-  padding: rem(11) rem(8);
+  padding: rem(11) rem(8) rem(9);
 }
 
 .contact-form__textarea{
@@ -148,7 +151,7 @@
 
 .contact-form__send{
   width: 82%;
-  margin: rem(16) auto 0;
+  margin: rem(41) auto 0;
   @include mq("md"){
     text-align: center;
     margin-top: rem(80);
@@ -172,8 +175,8 @@
   border: rem(1) solid $green;
   width: rem(22);
   height: rem(22);
-  left: 0;
-  top: rem(1);
+  left: rem(-6);
+  top: rem(-2);
 }
 
 .contact-form__send span::after{
@@ -184,7 +187,7 @@
   width: rem(13);
   height: rem(8);
   transform: rotate(-45deg);
-  top: rem(6);
+  top: rem(3);
   left: rem(5);
   opacity: 0;
 }
@@ -194,8 +197,11 @@
 }
 
 .contact-form__submit{
-  margin: rem(24) auto 0;
+  margin: rem(22) auto 0;
   text-align: center;
+  @include mq("md"){
+    margin: rem(38) auto 0;
+  }
 }
 
 

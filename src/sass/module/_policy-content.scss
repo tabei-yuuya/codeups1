@@ -30,15 +30,15 @@
 }
 
 .policy-content__items{
-  margin-top: rem(40);
+  margin-top: rem(31);
   font-family: $third-font-family;
   font-weight: $regular;
   color: $black;
   line-height: 2;
 }
 
-.policy-content__item{
-  margin-top: rem(40);
+.policy-content__item + .policy-content__item{
+  margin-top: rem(32);
 }
 
 .policy-content__lists{
@@ -46,7 +46,7 @@
 }
 
 .policy-content__list{
-  padding-left: rem(15);
+  padding-left: rem(25);
   text-indent: -1em;
 }
 

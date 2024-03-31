@@ -16,27 +16,34 @@
   font-size: rem(16);
   font-family: $third-font-family;
   font-weight: $regular;
-  padding: rem(16);
+  padding: rem(16) rem(16) rem(15);
   cursor: pointer;
   color: $white;
   background-color: $green;
+  @include mq("md"){
+    font-size: rem(20);
+    padding: rem(25) rem(40) rem(24);
+  }
 }
 
 .faq-accordion__title::after {
   position: absolute;
   top: 50%;
-  right: rem(25);
+  right: rem(15);
   display: block;
   width: rem(28);
   height: rem(1);
   background-color: $white;
   content: "";
+  @include mq("md"){
+    right: rem(42);
+  }
 }
 
 .faq-accordion__title::before {
   position: absolute;
   top: 50%;
-  right: rem(25);
+  right: rem(15);
   display: block;
   width: rem(28);
   height: rem(1);
@@ -44,6 +51,9 @@
   content: "";
   transform: rotate(90deg);
   transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+  @include mq("md"){
+    right: rem(42);
+  }
 }
 
 
@@ -54,7 +64,7 @@
 
 .faq-accordion__content {
   display: none;
-  padding: rem(24) rem(16);
+  padding: rem(24) rem(16) rem(21);
   border: rem(1) solid $green;
   @include mq("md"){
     margin-top: rem(16);
@@ -67,4 +77,5 @@
   font-family: $third-font-family;
   font-weight: $regular;
   color: $black;
+  line-height: 1.45em;
 }

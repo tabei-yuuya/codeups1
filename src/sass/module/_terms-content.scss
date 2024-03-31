@@ -30,15 +30,18 @@
 }
 
 .terms-content__items{
-  margin-top: rem(40);
+  margin-top: rem(30);
   font-family: $third-font-family;
   font-weight: $regular;
   color: $black;
   line-height: 2;
 }
 
-.terms-content__item{
+.terms-content__item + .terms-content__item{
   margin-top: rem(40);
+  @include mq("md"){
+    margin-top: rem(31);
+  }
 }
 
 .terms-content__lists{
@@ -46,7 +49,7 @@
 }
 
 .terms-content__list{
-  padding-left: rem(15);
+  padding-left: rem(25);
   text-indent: -1em;
 }
 
@@ -72,7 +75,7 @@
   @include mq("md"){
     width: rem(301);
     aspect-ratio: 310 / 138;
-    top: rem(-70);
+    top: rem(-71);
     }
 }
 
