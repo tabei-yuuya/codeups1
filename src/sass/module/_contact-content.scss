@@ -3,12 +3,10 @@
 position: relative;
 }
 
-.contact-content__form{
-  @include mq("md"){
-    max-width: rem(700);
-    width: 100%;
-    margin: 0 auto;
-  }
+.contact-content__inner.inner{
+  max-width: rem(750);
+  width: 100%;
+  margin: 0 auto;
 }
 
 .contact-content__img{

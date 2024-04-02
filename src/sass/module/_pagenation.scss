@@ -2,13 +2,19 @@
 
 .pagination{
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
+  @include mq("md"){
+    justify-content:center;
+  }
 }
 
 .pagination__items{
   display: grid;
   grid-auto-flow: column;
   column-gap:rem(12.5) ;
+  @include mq("md"){
+    margin-left: rem(40);
+  }
 }
 
 .pagination__link{
@@ -45,6 +51,12 @@
   width: rem(38);
   height: rem(38);
   transition: all 0.3s;
+}
+
+.pagination__next{
+  @include mq("md"){
+    margin-left: rem(40);
+  }
 }
 
 .pagination__arrow{

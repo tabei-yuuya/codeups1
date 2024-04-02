@@ -6,8 +6,10 @@
   }
 }
 
-.voice__img1{
+.voice::before{
   @include mq("md"){
+    content: "";
+    background: url(../images/voice-hanadai.png) center center / contain no-repeat;
     width: rem(301);
     aspect-ratio: 310 / 138;
     position: absolute;
@@ -15,6 +17,8 @@
     left: calc(50% - min(47vw, 38.78rem));
   }
 }
+
+
 
 .voice__inner{
   position: relative;
@@ -25,20 +29,22 @@
   }
 }
 
-.voice__btn{
-  margin-top: rem(38);
- text-align: center;
+.voice__inner::after{
   @include mq("md"){
-    margin-top: rem(79);
-  }
-}
-
-.voice__img2{
-  @include mq("md"){
+    content: "";
+    background: url(../images/voice-ibaratatu.png) center center / contain no-repeat;
     width: rem(71);
     aspect-ratio: 71 / 162;
     position: absolute;
     bottom: rem(-71);
     right: rem(25);
+  }
+}
+
+.voice__btn{
+  margin-top: rem(38);
+ text-align: center;
+  @include mq("md"){
+    margin-top: rem(79);
   }
 }

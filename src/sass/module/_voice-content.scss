@@ -4,13 +4,6 @@
   position: relative;
 }
 
-.voice-content__tab-content{
-  display: none;
-}
-.voice-content__tab-content.active{
-  display: block;
-}
-
 .voice-content__cards{
   display: grid;
   grid-auto-flow: row;

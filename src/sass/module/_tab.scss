@@ -6,7 +6,7 @@
   position: relative;
   z-index: 10;
   @include mq("md"){
-    grid-template-columns: repeat(4, rem(162));
+    grid-template-columns: repeat(auto-fill, rem(162));
     gap: rem(15) rem(32);
   }
 }
@@ -23,6 +23,13 @@
   text-transform:uppercase;
   transition: color 0.3s, background-color 0.3s;
   cursor: pointer;
+  display: inline-block;
+  width: 100%;
+}
+
+.tab__item:hover{
+  background-color: $green;
+  color: $white;
 }
 
 .tab__item.active{

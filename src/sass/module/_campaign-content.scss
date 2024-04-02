@@ -16,7 +16,6 @@
 
 .campaign-content__pagination{
   margin: rem(79) auto 0;
-  max-width: rem(444);
   @include mq("md"){
     margin-top: rem(71);
   }

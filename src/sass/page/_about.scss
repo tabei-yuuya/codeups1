@@ -7,7 +7,20 @@
   @include mq("md"){
     max-width: rem(1440);
     position: relative;
+  }
 }
+
+.about::after{
+  @include mq("md"){
+    content: "";
+    background: url(../images/sango.png) center center / contain no-repeat;
+    width: rem(194);
+    aspect-ratio:194 / 181 ;
+    position: absolute;
+    right: calc(50% - min(47vw, 39.8125rem));
+    bottom: rem(-90);
+  }
+
 }
 
 .about__content{

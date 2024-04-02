@@ -3,7 +3,6 @@
   width: 100%;
   height: rem(460);
   position: relative;
-  object-fit: cover;
   @include mq("md"){
     height: rem(548);
   }

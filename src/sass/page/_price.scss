@@ -7,6 +7,18 @@
   }
 }
 
+.price::before{
+  @include mq("md"){
+    content: "";
+    background: url(../images/price-hanadai.png) center center / contain no-repeat;
+    width: rem(437);
+    aspect-ratio: 437 / 201;
+    position: absolute;
+    bottom: rem(59);
+    left: calc(50% - min(47vw, 38.78rem));
+  }
+}
+
 .price__inner{
   max-width: rem(600);
   width: 100%;
@@ -164,14 +176,4 @@
  @include mq("md"){
   margin-top: rem(79);
  }
-}
-
-.price__img3{
-  @include mq("md"){
-    width: rem(437);
-    aspect-ratio: 437 / 201;
-    position: absolute;
-    bottom: rem(59);
-    left: calc(50% - min(47vw, 38.78rem));
-  }
 }

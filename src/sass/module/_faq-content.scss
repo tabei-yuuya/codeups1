@@ -3,6 +3,13 @@
   position: relative;
 }
 
+.faq-content .inner{
+  @include mq("md"){
+    max-width:rem(750) ;
+    width: 100%;
+  }
+}
+
 .faq-content__img{
   width: rem(135);
   aspect-ratio: 310 / 138;

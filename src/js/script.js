@@ -149,15 +149,6 @@ $(document).ready(function() {
   });
 
 
-// tab
-// 上記の動きをページが読み込まれたらすぐに動かす
-// $(window).on('load', function () {
-//   $('.js-tab-item:first-of-type').addClass("active"); //最初のliにactiveクラスを追加
-//   $('.js-content-area:first-of-type').addClass("active"); //最初の.areaにis-activeクラスを追加
-// var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
-// GethashID (hashName);//設定したタブの読み込み
-// });
-
 $(function () {
   const tabButton = $(".js-tab-item"),
     tabContent = $(".js-content-area");
@@ -174,6 +165,7 @@ $(function () {
 //別ページからタブメニューへダイレクトリンク
 //タブへダイレクトリンクの実装
     //リンクからハッシュを取得
+    window.scrollTo(0, 0);
     var hash = location.hash;
     hash = (hash.match(/^#tab__menu-\d+$/) || [])[0];
     //リンクにハッシュが入っていればtabnameに格納
@@ -191,6 +183,7 @@ $(function () {
     $(".js-content-area").eq(tabno).addClass("active");
     //タブのアクティブ化
     $(".js-tab-item").eq(tabno).addClass("active");
+
 });
 
 // モーダル
@@ -220,9 +213,9 @@ $(function () {
     "display",
     "block"
   );
-  $(".js-accordion__item:first-child .js-accordion__title").addClass(
-    "is-open"
-  );
+  // $(".js-accordion__item:first-child .js-accordion__title").addClass(
+  //   "is-open"
+  // );
   $(".js-accordion__item:nth-of-type(2)  .js-accordion__content").css(
     "display",
     "none "
