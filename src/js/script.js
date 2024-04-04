@@ -91,9 +91,6 @@ $(document).ready(function() {
     });
   });
 
-
-
-
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
   $(document).on('click', 'a[href*="#"]', function () {
@@ -185,6 +182,7 @@ $(function () {
     $(".js-tab-item").eq(tabno).addClass("active");
 
 });
+
 
 // モーダル
 $(function () {
