@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .card{
-  // width: rem(280);
   box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
@@ -161,16 +160,16 @@
 }
 
 // campaignページ
-.card .card__title--campaign__title{
-  @include mq("md"){
-    font-size: rem(24);
-  }
-}
-
-.card .card--campaign__img{
+.card__img.card__img--campaign__img{
   aspect-ratio: 280 / 188;
   @include mq("md"){
     aspect-ratio: 520 / 347;
+  }
+}
+
+.card .card__title--campaign__title{
+  @include mq("md"){
+    font-size: rem(24);
   }
 }
 

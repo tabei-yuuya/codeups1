@@ -63,7 +63,6 @@
 }
 
 .faq-accordion__content {
-  display: none;
   padding: rem(24) rem(16) rem(21);
   border: rem(1) solid $green;
   @include mq("md"){

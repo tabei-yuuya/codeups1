@@ -1,4 +1,9 @@
 @use "global" as *;
+
+.html__info{
+  scroll-padding-top:rem(250) ;
+}
+
 .info-content{
   position: relative;
 }
